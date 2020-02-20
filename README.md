@@ -26,3 +26,13 @@
 * C-n ⊤ encode
 * C-S-/ ⊣ left
 * C-/ ⊢ right
+
+## other
+
+* C-l   ⎕ Quad
+* C-S-] ⍞ Quote-quad
+* C-\   ⋄ Statement separator
+* C-S-' ⍕ Format
+* C-S-, ⍝ Comment
+* C-S-` ⍎ Execute
+* C-S-[ ⌹ Domino (matrix inverse / matrix divide)
