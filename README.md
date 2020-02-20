@@ -42,3 +42,12 @@
 | C-S-, | ⍝ | Comment
 | C-S-` | ⍎ | Execute
 | C-S-[ | ⌹ | Domino (matrix inverse / matrix divide)
+
+# Five APL operators:
+| Name          | form |
+|:--------------|:----:|  
+| Reduction     | f/   |
+| Scan          | f\   |
+| Outer product | X∘.fY, f ∊ {+ - × ÷ ⌊ ⌈ \| * ¤ ○ ! < ≤ = ≥ > ≠ ∨ ^ ⍱ ⍲} |
+| Inner product | Xf.gY, (f,g) ∊ {+ - × ÷ ⌊ ⌈ \| * ¤ ∘ ! < ≤ = ≥ > ≠ ∨ ^ ⍱ ⍲} |
+| Axis          | ? |
