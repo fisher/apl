@@ -31,7 +31,29 @@
 | C-S-/ |  ⊣ | left                               |
 | C-/   |  ⊢ | right                              |
 
-## other
+## Manipulative
+| Key | Sym |  Monadic  | Dyadic |
+|:----|:---:|:---------:|:------:|
+| C-r |  ⍴  |  Shape    | Reshape
+|     |  ,  |  Ravel    | Concatenate
+|C-S-5|  ⌽  | Reverse   | Rotate
+|C-S-6|  ⍉  | Transpose | Transpose
+| C-Y |  ↑  |    ---    | Take
+| C-U |  ↓  |    ---    | Drop
+|     |  /  |    ---    | Compress
+|     |  \  |    ---    | Expand
+
+## Sorting and coding
+
+| Key | Sym |  Monadic  | Dyadic |
+|:----|:---:|:---------:|:------:|
+|C-S-4|  ⍋  | GRADE UP  |  ---
+|C-S-3|  ⍒  | GRADE DOWN|  ---
+| C-n |  ⊤  |    ---    | ENCODE
+| C-b |  ⊥  |    ---    | DECODE
+
+
+## interactive/other
 
 | Key   | Sym | Name/Function                     |
 |:------|:--:|:-----------------------------------|
