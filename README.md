@@ -6,19 +6,22 @@
 
 # The keyboard
 
-## arythmetics
+## arythmetic and algebraic functions
 
-| Key   | Sym | Name/Function                     |
-|:------|:---:|:----------------------------------|
-| C-]   |  ←  | assign                            |
-|       | + - |  add, substract                   |
-| C-=   |  ×  | multiplication                    |
-| C-[   |  ÷  | 1/x / division                    |
-|       |  *  |   exponential / power             |
-| C-S-8 | ⍟  | natural / specific base logarythm |
-| C-S-[ | ⌹  | matrix inverse / division         |
-| C-o   |  ○  | pi / sin / cos / tan              |
-
+| Key   | Sym |   Monadic       |   Dyadic          |
+|:------|:---:|:----------------|:------------------|
+| C-]   |  ←  |   ---           | assign            |
+|       |  +  |   Identity      | add               |
+|       |  -  |   Negate        | substract         |
+| C-=   |  ×  |   Sign of       | multiplication    |
+| C-\[  |  ÷  | Reciprocal 1/x  | division          |
+| C-S-\[| ⌹  | matrix inverse  | matrix division   |
+|  C-i  |  ⍳   | Index generator | Index of          |
+|       |  ?  | Random roll     |  Random deal
+|  S-8  |  *  |  Exponential    | Power
+| C-S-8 |  ⍟ |  Natural log    | given base log
+|  C-o  |  ○  | Pi times        | Circle (rad!)
+|       |  !  | Factorial       | Number of Combinations
 
 ## unsorted yet
 
@@ -31,17 +34,6 @@
 | C-n   |  ⊤ | encode                             |
 | C-S-/ |  ⊣ | left                               |
 | C-/   |  ⊢ | right                              |
-
-## Algebraic
-
-| Key   | Sym |   Monadic       |   Dyadic          |
-|:------|:---:|:----------------|:------------------|
-|  C-i  |  ⍳   | Index generator | Index of
-|       |  ?  | Random roll     |  Random deal
-|  S-8  |  *  |  Exponential    | Power
-| C-S-8 |  ⍟ |  Natural log    | given base log
-|  C-o  |  ○  | Pi times        | Circle (rad!)
-|       |  !  | Factorial       | Number of Combinations
 
 ## Manipulative
 | Key | Sym |  Monadic  | Dyadic |
