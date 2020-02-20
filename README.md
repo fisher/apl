@@ -19,6 +19,7 @@
 | C-S-[ | ⌹  | matrix inverse / division         |
 | C-o   |  ○  | pi / sin / cos / tan              |
 
+
 ## unsorted yet
 
 | Key   | Sym | Name/Function                      |
@@ -30,6 +31,17 @@
 | C-n   |  ⊤ | encode                             |
 | C-S-/ |  ⊣ | left                               |
 | C-/   |  ⊢ | right                              |
+
+## Algebraic
+
+| Key   | Sym |   Monadic       |   Dyadic          |
+|:------|:---:|:----------------|:------------------|
+|  C-i  |  ⍳   | Index generator | Index of
+|       |  ?  | Random roll     |  Random deal
+|  S-8  |  *  |  Exponential    | Power
+| C-S-8 |  ⍟ |  Natural log    | given base log
+|  C-o  |  ○  | Pi times        | Circle (rad!)
+|       |  !  | Factorial       | Number of Combinations
 
 ## Manipulative
 | Key | Sym |  Monadic  | Dyadic |
@@ -52,7 +64,6 @@
 | C-n |  ⊤  |    ---    | ENCODE
 | C-b |  ⊥  |    ---    | DECODE
 
-
 ## interactive/other
 
 | Key   | Sym | Name/Function                     |
@@ -66,10 +77,11 @@
 | C-S-[ | ⌹ | Domino (matrix inverse / matrix divide)
 
 # Five APL operators:
+
 | Name          | form |
 |:--------------|:----:|  
-| Reduction     | f/   |
-| Scan          | f\   |
+| Reduction     | f/, f ∊ {+  -  ×  ÷  ⌈  ⌊  \|  *  ¤  ○  !  <  ≤  =  ≥  >  ≠  ∨  ∧  ⍱  ⍲}   |
+| Scan          | f\, f ∊ {+  -  ×  ÷  ⌈  ⌊  \|  *  ¤  ○  !  <  ≤  =  ≥  >  ≠  ∨  ^  ⍱  ⍲}   |
 | Outer product | X∘.fY, f ∊ {+ - × ÷ ⌊ ⌈ \| * ¤ ○ ! < ≤ = ≥ > ≠ ∨ ^ ⍱ ⍲} |
 | Inner product | Xf.gY, (f,g) ∊ {+ - × ÷ ⌊ ⌈ \| * ¤ ∘ ! < ≤ = ≥ > ≠ ∨ ^ ⍱ ⍲} |
 | Axis          | ? |
