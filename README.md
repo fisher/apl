@@ -98,10 +98,10 @@
 
 # Five APL operators:
 
-| Name          | form |
-|:--------------|:----:|  
-| Reduction     | f/, f ∊ {+  -  ×  ÷  ⌈  ⌊  \|  *  ¤  ○  !  <  ≤  =  ≥  >  ≠  ∨  ∧  ⍱  ⍲}   |
-| Scan          | f\, f ∊ {+  -  ×  ÷  ⌈  ⌊  \|  *  ¤  ○  !  <  ≤  =  ≥  >  ≠  ∨  ^  ⍱  ⍲}   |
+| Name          | form    | Notes
+|:--------------|:-------:|----------------
+| Reduction     | f/,    f ∊ {+ - × ÷ ⌈ ⌊ \| * ¤ ○ ! < ≤ = ≥ > ≠ ∨ ∧ ⍱ ⍲} | foldr List -> Scalar
+| Scan          | f\,    f ∊ {+ - × ÷ ⌈ ⌊ \| * ¤ ○ ! < ≤ = ≥ > ≠ ∨ ^ ⍱ ⍲} | foldl List -> List (keeping accumulator)
 | Outer product | X∘.fY, f ∊ {+ - × ÷ ⌊ ⌈ \| * ¤ ○ ! < ≤ = ≥ > ≠ ∨ ^ ⍱ ⍲} |
 | Inner product | Xf.gY, (f,g) ∊ {+ - × ÷ ⌊ ⌈ \| * ¤ ∘ ! < ≤ = ≥ > ≠ ∨ ^ ⍱ ⍲} |
 | Axis          | ? |
