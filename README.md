@@ -8,28 +8,28 @@
 
 ## arythmetic and algebraic functions
 
-| Key   | Sym |   Monadic       |   Dyadic          |
-|:------|:---:|:----------------|:------------------|
-| C-]   |  ←  |   ---           | assign            |
-|       |  +  |   Identity      | add               |
-|       |  -  |   Negate        | substract         |
-| C-=   |  ×  |   Sign of       | multiplication    |
-| C-\[  |  ÷  | Reciprocal 1/x  | division          |
-| C-S-\[| ⌹  | matrix inverse  | matrix division   |
-|  C-i  |  ⍳   | Index generator | Index of          |
-|       |  ?  | Random roll     |  Random deal
-|  S-8  |  *  |  Exponential    | Power
-| C-S-8 |  ⍟ |  Natural log    | given base log
-|  C-o  |  ○  | Pi times        | Circle (rad!)
-|       |  !  | Factorial       | Number of Combinations
+| Key   | Sym |   Monadic       |   Dyadic                 | Notes    
+|:------|:---:|:----------------|:-------------------------|:---------
+| C-]   |  ←  |   ---           | assign                   |
+|       |  +  |   Identity      | add                      |
+|       |  -  |   Negate        | substract                |
+| C-=   |  ×  |   Sign of       | multiplication           |
+| C-\[  |  ÷  | Reciprocal 1/x  | division                 |
+| C-S-\[| ⌹  | matrix inverse  | matrix division          |
+|  C-i  |  ⍳   | Index generator | Index of                 |
+|       |  ?  | Random roll     |  Random deal             |
+|  S-8  |  *  |  Exponential    | Power                    |
+| C-S-8 |  ⍟ |  Natural log    | given base log           |
+|  C-o  |  ○  | Pi times        | Circle (rad!)            |
+|       |  !  | Factorial       | Number of Combinations   |
+|       | \|  | Absolute value  | Residue (div remainder)  |
+| C-s   |  ⌈  | ceiling         | maximum                  |
+| C-d   |  ⌊  | floor           | minimum                  |
 
 ## unsorted yet
 
 | Key   | Sym | Name/Function                      |
 |:------|:---:|:-----------------------------------|
-|       | \|  | abs / residue (division remainder) |
-| C-s   |  ⌈  | ceiling / maximum                  |
-| C-d   |  ⌊  | floor / minimum                    |
 | C-b   |  ⊥ | decode                             |
 | C-n   |  ⊤ | encode                             |
 | C-S-/ |  ⊣ | left                               |
@@ -55,6 +55,27 @@
 |C-S-3|  ⍒  | GRADE DOWN|  ---
 | C-n |  ⊤  |    ---    | ENCODE
 | C-b |  ⊥  |    ---    | DECODE
+
+## Comparative (dyadic only)
+| Key | Sym | Function                 | Returns
+|:----|:---:|:-------------------------|------------
+|     |  <  | Less than                | Vector of size R
+| C-4 |  ≤  | Less than or equal to    | Vector of size R
+|     |  =  | Equal to                 | Vector of size R
+| C-6 |  ≥  | Greater than or equal to | Vector of size R
+|     |  >  | Greater than             | Vector of size R
+| C-8 |  ≠  | Not equal to             | Vector of size R
+| C-e |  ∊  | Is an element of         | Vector of size Left
+
+## Logical
+
+| Key   | Sym | Name/Function                     |
+|:------|:---:|:-----------------------------------|
+|       |  ~  | Not (monadic only)
+| C-9   |  ∨  | Or  (dyadic only)
+| C-0   |  ^  | And (dyadic only)
+| C-S-9 |  ⍱  | Nor (dyadic only)
+| C-S-0 |  ⍲  | Nand (dyadic only)
 
 ## interactive/other
 
