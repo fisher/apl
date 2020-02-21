@@ -28,12 +28,19 @@
 
 ## unsorted yet
 
-| Key   | Sym | Name/Function                      |
-|:------|:---:|:-----------------------------------|
-| C-b   |  ⊥ | decode                             |
-| C-n   |  ⊤ | encode                             |
-| C-S-/ |  ⊣ | left                               |
-| C-/   |  ⊢ | right                              |
+| Key   | Sym | Monadic       | Dyadic                | Notes
+|:------|:---:|:--------------|:----------------------|:-----------
+| C-S-/ |  ⊣  | Same          | left arg              |
+| C-/   |  ⊢  | Same          | right arg             |
+| C-M-1 |  ≡  | Depth of      | Matches
+| C-M-\ |  ≢  |               | Not match
+| C-z   |  ⊂  | Enclose       | Partition
+| C-x   |  ⊃  | Disclose      | Pick
+| C-S-l |  ⌷  |               | Index
+| C-M-5 |  ⍷   |               | Find
+| C-v   |  ∪  | Unique        | Union
+| C-c   |  ∩  |               | Intersection
+
 
 ## Manipulative
 | Key | Sym |  Monadic  | Dyadic |
@@ -69,13 +76,13 @@
 
 ## Logical
 
-| Key   | Sym | Name/Function                     |
-|:------|:---:|:-----------------------------------|
-|       |  ~  | Not (monadic only)
-| C-9   |  ∨  | Or  (dyadic only)
-| C-0   |  ^  | And (dyadic only)
-| C-S-9 |  ⍱  | Nor (dyadic only)
-| C-S-0 |  ⍲  | Nand (dyadic only)
+| Key   | Sym | Monadic  | Dyadic                    |
+|:------|:---:|:---------|:--------------------------|
+|       |  ~  | Not      | Without
+| C-9   |  ∨  | ---      | Or
+| C-0   |  ^  | ---      | And
+| C-S-9 |  ⍱  | ---      | Nor
+| C-S-0 |  ⍲  | ---      | Nand
 
 ## interactive/other
 
