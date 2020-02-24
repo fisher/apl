@@ -40,6 +40,7 @@
 | C-M-5 |  ⍷   |               | Find
 | C-v   |  ∪  | Unique        | Union
 | C-c   |  ∩  |               | Intersection
+| C-g   |  ∇  |               |                        | named 'del'; self-reference inside a lambda
 
 
 ## Manipulative
@@ -105,3 +106,37 @@
 | Outer product | X∘.fY, f ∊ {+ - × ÷ ⌊ ⌈ \| * ¤ ○ ! < ≤ = ≥ > ≠ ∨ ^ ⍱ ⍲} |
 | Inner product | Xf.gY, (f,g) ∊ {+ - × ÷ ⌊ ⌈ \| * ¤ ∘ ! < ≤ = ≥ > ≠ ∨ ^ ⍱ ⍲} |
 | Axis          | ? |
+
+# Goodies
+
+| Pattern | Meaning              | Notes
+|:-------:|:---------------------|:---------------
+| ⎕WA    | Workspace available  |
+| ⎕TS    | Timestamp            |
+| ⎕IO    | Index Origin         | ⎕IO ← 0 ⍝ to start indexing from 0 (default 1)
+| ⎕PP    | Print digits         | ⎕PP ← 8 ⍝ to use 8 significant digits (default 18)
+| ⎕PW    | Print width          |
+| ⎕NL 2  | returns matrix of defined variables
+| ⎕NL 3  | returns matrix of defined functions
+| ⎕NC    | tells if Rarg is already defined in the current ws (retval 0 if not defined, 2 when variable, 3 function)
+| ⎕LX    | can contain a single character for execution after the ws has been loaded
+| ⎕EX 'EXAMPLE' | erases the object called EXAMPLE
+
+# Commands
+
+| Command | Meaning
+|:--------|:-------------
+| )WSID   | Workspace Id
+| )FNS    | defined Functions in the current Workspace
+| )VARS   | defined Variables in the workspace
+| )CLEAR  | clear Workspace
+| )ERASE  | erase defined function or variable (Rarg)
+| )LIB    | shows workspaces stored on the disc
+| )SAVE   | saves an exact copy of the current workspace onto the disc
+| )LOAD   | loads into the active workspace an exact copy of a previously )SAVEd ws
+| )DROP   | deletes a specified previously saved workspace from the disc
+| )COPY   | copies specific functions from specified ws on disc to the current ws
+| )PCOPY  | the same as )COPY but don't overload names which are already defined in the current ws
+| )OFF    | logoff (losing workspace)
+| )CONTINUE | logoff with autosave, ws is saved as CONTINUE
+
