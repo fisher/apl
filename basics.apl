@@ -12,3 +12,5 @@ strcmp←{(⍴⍺)=(⍴⍵):^/⍺=⍵⋄0}
 beginWith←{∧/⍺=(⍴⍺)↑⍵}
 
 fac←{⍵>1:⍵×∇⍵-1⋄1}
+
+summary←{(1=≡⍵)∧1=⍴⍴⍵:(('min', ⌊/⍵), ('avg', +/⍵÷(⍴⍵)),( 'max', ⌈/⍵)) ⋄ 'no nested vectors, please'}
