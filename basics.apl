@@ -9,7 +9,7 @@ fromHex←{16 16 16 16⊥¯1+'0123456789ABCDEF'⍳⍵}
 fromHex X←⍞
 
 strcmp←{(⍴⍺)≡(⍴⍵):^/⍺=⍵⋄0}
-beginWith←{∧/⍺=(⍴⍺)↑⍵}
+beginWith←{∧/⍵=(⍴⍵)↑⍺}
 
 fac←{⍵>1:⍵×∇⍵-1⋄1}
 
