@@ -12,6 +12,7 @@ strcmp←{(⍴⍺)≡(⍴⍵):^/⍺=⍵⋄0}
 beginWith←{∧/⍵=(⍴⍵)↑⍺}
 
 fac←{⍵>1:⍵×∇⍵-1⋄1}
+_primes←{(~_∊_∘.×_)/_←1↓⍳⍵}
 
 summary←{(1=≡⍵)∧1=⍴⍴⍵:(('min', ⌊/⍵), ('avg', +/⍵÷(⍴⍵)),( 'max', ⌈/⍵)) ⋄ 'no nested vectors, please'}
 avg←{+/⍵÷⍴⍵} ⍝ get rho(w) first, divide vector w by scalar rho(w), fold by '+' the result vector
