@@ -24,3 +24,4 @@ print_all_the_chars←(¯1+⍳17)⍪((⍳16),16 16⍴⎕AV) ⍝ no arguments, ju
 
 _hor_barchart←{' ⎕'[⎕IO+⍵∘.≥⍳⌈/⍵]} ⍝ Barchart of integer values (across the page).
 _vert_barchart←{' ⎕'[⎕IO+(⌽⍳⌈/⍵)∘.≤⍵]} ⍝ Barchart of integer values (down the page).
+_hor_scaled_barchart←{' ⎕'[⎕IO+⍵∘.≥(⌈/⍵)×(⍳⍺)÷⍺]} ⍝ Barchart of integer values (across the page), scaled by max Larg chars.
