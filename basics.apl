@@ -23,6 +23,7 @@ _is_not_string←{' '≠1↑0⍴⍵} ⍝ found in prod code, LO func
 print_all_the_chars←(¯1+⍳17)⍪((⍳16),16 16⍴⎕AV) ⍝ no arguments, just print the used chartable (it's not ASCII, surprise surprise)
 _magicCube←{A⊖(A←(⍳⍵)-⌈⍵÷2)⌽(⍵,⍵)⍴⍳⍵×⍵} ⍝ gen magic cube with side Rarg
 
+⍝ found on site with APL idioms
 _hor_barchart←{' ⎕'[⎕IO+⍵∘.≥⍳⌈/⍵]} ⍝ Barchart of integer values (across the page).
 _vert_barchart←{' ⎕'[⎕IO+(⌽⍳⌈/⍵)∘.≤⍵]} ⍝ Barchart of integer values (down the page).
 _hor_scaled_barchart←{' ⎕'[⎕IO+⍵∘.≥(⌈/⍵)×(⍳⍺)÷⍺]} ⍝ Barchart of integer values (across the page), scaled by max Larg chars.
