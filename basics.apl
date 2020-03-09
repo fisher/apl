@@ -16,6 +16,7 @@ _primes←{(~_∊_∘.×_)/_←1↓⍳⍵} ⍝ find primes up to Rarg, e.g. '_pr
 
 summary←{(1=≡⍵)∧1=⍴⍴⍵:(('min', ⌊/⍵), ('avg', +/⍵÷(⍴⍵)),( 'max', ⌈/⍵)) ⋄ 'no nested vectors, please'}
 avg←{+/⍵÷⍴⍵} ⍝ get rho(w) first, divide vector w by scalar rho(w), fold by '+' the result vector
+sd←{((+/(⍵-(+/⍵)÷⍴⍵)*2)÷⍴⍵)*.5}
 
 _dltb←{a←(∨\⍵≠' ')/⍵ ⋄ (⌽∨\⌽a≠' ')/a} ⍝ trim spaces
 _magicCube←{A⊖(A←(⍳⍵)-⌈⍵÷2)⌽(⍵,⍵)⍴⍳⍵×⍵} ⍝ gen magic cube with side Rarg
