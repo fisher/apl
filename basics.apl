@@ -19,6 +19,7 @@ summary←{(1=≡⍵)∧1=⍴⍴⍵:(('min', ⌊/⍵), ('avg', +/⍵÷(⍴⍵)),
 avg←{+/⍵÷⍴⍵} ⍝ get rho(w) first, divide vector w by scalar rho(w), fold by '+' the result vector
 sd←{((+/(⍵-(+/⍵)÷⍴⍵)*2)÷⍴⍵)*.5}
 
+⍝ found in prod codebase
 _dltb←{a←(∨\⍵≠' ')/⍵ ⋄ (⌽∨\⌽a≠' ')/a} ⍝ trim spaces
 _is_not_string←{' '≠1↑0⍴⍵} ⍝ found in prod code, LO func
 print_all_the_chars←(¯1+⍳17)⍪((⍳16),16 16⍴⎕AV) ⍝ no arguments, just print the used chartable (it's not ASCII, surprise surprise)
