@@ -22,7 +22,7 @@ sd←{((+/(⍵-(+/⍵)÷⍴⍵)*2)÷⍴⍵)*.5}
 ⍝ found in prod codebase
 _dltb←{a←(∨\⍵≠' ')/⍵ ⋄ (⌽∨\⌽a≠' ')/a} ⍝ trim spaces
 _is_not_string←{' '≠1↑0⍴⍵} ⍝ found in prod code, LO func
-print_all_the_chars←(¯1+⍳17)⍪((⍳16),16 16⍴⎕AV) ⍝ no arguments, just print the used chartable (it's not ASCII, surprise surprise)
+print_all_the_chars←(¯1+⍳17)⍪((⍳16),16 16⍴⎕AV) ⍝ no arguments, just print the used chartable (it's not ASCII, surprise-surprise)
 _magicCube←{A⊖(A←(⍳⍵)-⌈⍵÷2)⌽(⍵,⍵)⍴⍳⍵×⍵} ⍝ gen magic cube with side Rarg
 
 ⍝ found on site with APL idioms
