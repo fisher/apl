@@ -119,14 +119,26 @@ Division.
 
 ### Exponentiation
 
+Regular asterisk sign.
+
 #### Monadic
 
+Exponential
+
 #### Dyadic
+
+Power
 
 ## ⍟
 
 ### Logarithm
 
+Press `C-S-8` to generate the symbol.
+
 #### Monadic
 
+Natural logarithm
+
 #### Dyadic
+
+logarithm of a given _lval_ base
