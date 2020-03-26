@@ -43,20 +43,69 @@ another_variable ← 200 + a
 
 ## +
 
-Plus
+Plus. Just a regular plus sign.
+
+### Monadic
+
+Identity. Returns _rval_ as is.
+
+```apl
+var ← +¯10 20 ⍝ ... var is now ¯10 20
+```
+### Dyadic
+
+Addition. Sums _lval_ and _rval_. Both can be scalars or vectors.
 
 ## -
 
-Minus
+Minus. Regular minus sign.
+
+### Monadic
+
+Negates the number.
+
+```apl
+var ← -10 ⍝ ... var is now ¯10
+```
+### Dyadic
+
+Substraction.
 
 ## ×
 
-Multiplication
+Multiplication. Press `C-=` to generate the symbol.
+
+### Monadic
+
+Sign of.
+
+```apl
+var ← × 12 0 ¯12 ⍝ ... var now contains vector 1 0 ¯1
+```
+
+### Dyadic
+
+Multiplication. Surprise-surprise
 
 ## ÷
 
+Division. Press `C-[` to generate the symbol.
 
-Division
+### Monadic
+
+Reciprocal. Returns 1/_rval_ relation.
+
+```apl
+var ← ÷ 1 2 3 4 5  ¯4 ¯5 ⍝ ... var now 1 0.5 0.33333333333333 0.25 0.2 ¯0.25 ¯0.2
+var ← ÷ 3 ⍝ ... var now 0.33333333333333
+var ×3    ⍝ ... returns 1
+```
+
+**NB:** ÷0 throws `DOMAIN ERROR: Divide by zero` 
+
+### Dyadic
+
+Division.
 
 ## *
 
