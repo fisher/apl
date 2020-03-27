@@ -41,6 +41,9 @@ Assigns _rval_ to the _lval_. Just press `C-]` to generate the symbol.
 ```apl
 a←10
 another_variable ← 200 + a
+(yet_another1 yet_another2) ← 100   ⍝ ... yet_another1 = 100, yet_another2 = 100
+(yet_another1 yet_another2) ← 10 20  ⍝ ... yet_another1 = 10, yet_another2 = 20
+var1 ← var2 ← var3 ← 0  ⍝ ... all three vars are 0 now
 ```
 
 ## +
