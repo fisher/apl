@@ -61,7 +61,14 @@ var ← +¯10 20 ⍝ ... var is now ¯10 20
 ```
 #### Dyadic
 
-Addition. Sums _lval_ and _rval_. Both can be scalars or vectors.
+Addition. Sums _lval_ and _rval_. Both can be scalars or vectors. Both should be numeric.
+
+```apl
+res ← 1 2 3 + 4 5 6 ⍝ ... res is 5 7 9
+res ← 1 2 3 + 4     ⍝ ... res is 5 6 7, rval expands to the length of lval (4 4 4)
+res ← 1 + 2 3 4     ⍝ ... res is 3 4 5, lval expands to the length of rval (1 1 1)
+res ← 2 3 4 + 10 20 ⍝ ... throws LENGTH ERROR: Mismatched left and right argument shapes
+```
 
 ## -
 
@@ -74,11 +81,20 @@ Regular minus sign.
 Negates the number.
 
 ```apl
-var ← -10 ⍝ ... var is now ¯10
+var ← -10    ⍝ ... var is now ¯10
+var ← - 4j7  ⍝ ... var is ¯4j¯7
 ```
 #### Dyadic
 
 Substraction.
+
+Both _rval_ and _lval_ can be scalar or array, both should be numeric. Result is numeric.
+
+```apl
+var ← 5 - 2 3 4  ⍝ ... var is 3 2 1 (lval extends to the length of the rval, (5 5 5))
+var ← 5 4 3 - 2  ⍝ ... var is 3 2 1 (rval expands to the length of the lval, (2 2 2))
+var ← 2j3 - .3j5 ⍝ ... var is 1.7J¯2; (a+bi)-(c+di) = (a-c)+(b-d)i
+```
 
 ## ×
 
@@ -88,15 +104,33 @@ Press `C-=` to generate the symbol.
 
 #### Monadic
 
-Sign of.
+Sign of. (AKA _signum_, AKA _direction_).
+
+For integers and floats, the function returns ¯1, 0, or 1 for negative, zero or positive argument, respectively.
 
 ```apl
 var ← × 12 0 ¯12 ⍝ ... var now contains vector 1 0 ¯1
 ```
 
+For complex numbers, monadic _signum_ is equivalent to _rval_ ÷| _rval_.
+
+```apl
+var ← × 3j4 4j5       ⍝ ... var is 0.6J0.8 0.6246950476J0.7808688094
+res ← {⍵÷|⍵} 3j4 4j5 ⍝ ... res is 0.6J0.8 0.6246950476J0.7808688094
+res ← | ×3j4 4j5      ⍝ ... res is 1 1
+```
+
 #### Dyadic
 
 Multiplication. Surprise-surprise
+
+```apl
+res ← 1 2 3 × 4 5 6 ⍝ ... res is 4 10 18, a b c × x y z = a×x b×y c×z
+res ← 1 2 3 × 4     ⍝ ... res is 4 8 12, rval expands to the length of lval (4 4 4)
+res ← 1 × 2 3 4     ⍝ ... res is 2 3 4,  lval expands to the length of rval (1 1 1)
+res ← 2j3 × 1 4 5j6 ⍝ ... res is 2j3 8j12 ¯8j27
+res ← 2 3 4 × 10 20 ⍝ ... throws LENGTH ERROR: Mismatched left and right argument shapes
+```
 
 ## ÷
 
@@ -119,6 +153,10 @@ var ×3    ⍝ ... returns 1
 #### Dyadic
 
 Division.
+
+**NB:** System variable `⎕DIV` is an implicit argument of division function.
+* If (_⎕DIV_=0 and _rval_=0) then (if _lval_=0, the result of _lval_÷_rval_ is 1; otherwise (_lval_ ≠ 0), _lval_÷_rval_ throws DOMAIN ERROR.)
+* If _⎕DIV_=1 and _rval_=0, the result of _lval_÷_rval_ is 0 for all values of _lval_.
 
 ## *
 
