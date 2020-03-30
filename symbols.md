@@ -178,6 +178,10 @@ var ← * 1 0 ⍝ ... var equals to 2.718281828 1
 
 Power
 
+```apl
+var ← 10 * 3 ⍝ ... var equals to 1000
+```
+
 ## ⍟
 
 ### Logarithm
