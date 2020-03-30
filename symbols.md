@@ -182,6 +182,14 @@ Power
 var ← 10 * 3 ⍝ ... var equals to 1000
 ```
 
+Common idiom is to find a square root by powering to 1/2,
+
+```apl
+var ← 16 * ÷2 ⍝ ... this gives us the square root of 16, 4
+var ← 27 * ÷3 ⍝ ... this gives us the cubic root of 27, it's 3
+var ← 16 * ÷4 ⍝ ... equals to 2
+```
+
 ## ⍟
 
 ### Logarithm
