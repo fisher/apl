@@ -166,7 +166,13 @@ Regular asterisk sign.
 
 #### Monadic
 
-Exponential
+Exponential (natural logarithm)
+
+_rval_ should be numeric. Result is numeric and equals to the _rval_'s power of _e_
+
+```apl
+var ← * 1 0 ⍝ ... var equals to 2.718281828 1
+```
 
 #### Dyadic
 
