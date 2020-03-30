@@ -166,7 +166,7 @@ Regular asterisk sign.
 
 #### Monadic
 
-Exponential (natural logarithm)
+Exponential (reverse of natural logarithm)
 
 _rval_ should be numeric. Result is numeric and equals to the _rval_'s power of _e_, i.e. _e_<sup>rval</sup>
 
