@@ -144,8 +144,22 @@ Reciprocal. Returns 1/_rval_ relation.
 
 ```apl
 var ← ÷ 1 2 3 4 5  ¯4 ¯5 ⍝ ... var now 1 0.5 0.33333333333333 0.25 0.2 ¯0.25 ¯0.2
-var ← ÷ 3 ⍝ ... var now 0.33333333333333
-var ×3    ⍝ ... returns 1
+```
+
+Internal representation seems not to be simple IEEE 754, at least it successfully passes the well-known pitfall with floating point division:
+
+```apl
+var ← ÷ 3    ⍝ ... var now 0.33333333333333
+var ← var ×3 ⍝ ... var is 1 again
+```
+
+...but looks like a workaround for boundary case. In example below, first multiplication is using 14 digits after the dot, while the second is using 15 digits precision.
+
+```apl
+      0.33333333333333×3
+0.99999999999999
+      0.333333333333333×3
+1
 ```
 
 **NB:** `÷0` throws `DOMAIN ERROR: Divide by zero` if `⎕DIV` equals to 0; if `⎕DIV` = 1, `÷0` returns 0.
@@ -162,18 +176,18 @@ var ← 6 ÷ 3 ⍝ ... var = 2
 
 **NB:** System variable `⎕DIV` is an implicit argument of division function. In pseudocode:
 
-* If (_rval_ == 0)
-   - If (_⎕DIV_ == 0)
-      + If (_lval_ == 0)
-         * return 1;
-      + Else
-         * throw 'DOMAIN ERROR';
-   - Else
-      + return 0;
+If (_rval_ == 0) {
+  - If (_⎕DIV_ == 0)
+    + If (_lval_ == 0)
+      * return 1;
+    + Else
+      * throw 'DOMAIN ERROR';
+  - Else
+    + return 0;
+}
 
 ```apl
 ⎕DIV ← 1
-var ← ÷ 3 ⍝ ... var
 var ← ¯1 0 1 ÷ 1 1 1  ⍝ ... var = ¯1 0 1
 var ← ¯1 0 1 ÷ 0 0 0  ⍝ ... var =  0 0 0
 ⎕DIV ← 0
@@ -181,6 +195,8 @@ var ← ¯1 0 1 ÷ 1 1 1  ⍝ ... var = ¯1 0 1
 var ← ¯1 0 1 ÷ 0 0 0  ⍝ ... throws DOMAIN ERROR because of first and last cases, ¯1÷0 and 1÷0
 var ← 0 0 0 ÷ ¯1 0 1  ⍝ ... var =  0 1 0
 ```
+
+By default, `⎕DIV` equals to 0.
 
 ## *
 
