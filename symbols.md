@@ -176,7 +176,7 @@ var ← 6 ÷ 3 ⍝ ... var = 2
 
 **NB:** System variable `⎕DIV` is an implicit argument of division function. In pseudocode:
 
-If (_rval_ == 0) {
+If (_rval_ == 0)
   - If (_⎕DIV_ == 0)
     + If (_lval_ == 0)
       * return 1;
@@ -184,7 +184,6 @@ If (_rval_ == 0) {
       * throw 'DOMAIN ERROR';
   - Else
     + return 0;
-}
 
 ```apl
 ⎕DIV ← 1
