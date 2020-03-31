@@ -148,15 +148,39 @@ var ← ÷ 3 ⍝ ... var now 0.33333333333333
 var ×3    ⍝ ... returns 1
 ```
 
-**NB:** ÷0 throws `DOMAIN ERROR: Divide by zero` 
+**NB:** `÷0` throws `DOMAIN ERROR: Divide by zero` if `⎕DIV` equals to 0; if `⎕DIV` = 1, `÷0` returns 0.
+
+By default, `⎕DIV` equals to 0.
 
 #### Dyadic
 
 Division.
 
-**NB:** System variable `⎕DIV` is an implicit argument of division function.
-* If (_⎕DIV_=0 and _rval_=0) then (if _lval_=0, the result of _lval_÷_rval_ is 1; otherwise (_lval_ ≠ 0), _lval_÷_rval_ throws DOMAIN ERROR.)
-* If _⎕DIV_=1 and _rval_=0, the result of _lval_÷_rval_ is 0 for all values of _lval_.
+```apl
+var ← 6 ÷ 3 ⍝ ... var = 2
+```
+
+**NB:** System variable `⎕DIV` is an implicit argument of division function. In pseudocode:
+
+* If (_rval_ == 0)
+   - If (_⎕DIV_ == 0)
+      + If (_lval_ == 0)
+         * return 1;
+      + Else
+         * throw 'DOMAIN ERROR';
+   - Else
+      + return 0;
+
+```apl
+⎕DIV ← 1
+var ← ÷ 3 ⍝ ... var
+var ← ¯1 0 1 ÷ 1 1 1  ⍝ ... var = ¯1 0 1
+var ← ¯1 0 1 ÷ 0 0 0  ⍝ ... var =  0 0 0
+⎕DIV ← 0
+var ← ¯1 0 1 ÷ 1 1 1  ⍝ ... var = ¯1 0 1
+var ← ¯1 0 1 ÷ 0 0 0  ⍝ ... throws DOMAIN ERROR because of first and last cases, ¯1÷0 and 1÷0
+var ← 0 0 0 ÷ ¯1 0 1  ⍝ ... var =  0 1 0
+```
 
 ## *
 
