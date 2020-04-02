@@ -239,6 +239,29 @@ Press `C-S-8` to generate the symbol.
 
 Natural logarithm
 
+```apl
+      ⍟10 100 1000 10000
+2.302585092994 4.6051701859881 6.9077552789821 9.2103403719762
+      ⍟2 4 8 16 32
+0.69314718055995 1.3862943611199 2.0794415416798 2.7725887222398 3.4657359027997
+      ⍟1
+0
+      *1
+2.718281828459
+      ⍟*1
+1
+      {⍵:⎕←'yep'⋄⎕←'nope'}1=⍟*1
+yep
+```
+
 #### Dyadic
 
-logarithm of a given _lval_ base
+Logarithm of a given _lval_ base
+
+Defined in terms of monadic (natural) logarithm: `lval ⍟ rval == (⍟rval) ÷ ⍟lval`
+
+```apl
+var ← (10⍟100)                 ⍝ ... var equals to 2
+bool← (10⍟100) = (⍟100)÷⍟10   ⍝ ... bool is 1
+base← 16⍟256 512 1024 2048 4096 ⍝ ... base is vector 2 2.25 2.5 2.75 3
+```
