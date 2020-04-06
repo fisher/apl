@@ -275,6 +275,47 @@ base← 16⍟256 512 1024 2048 4096 ⍝ ... base is vector 2 2.25 2.5 2.75 3
 ```
 
 ## ⌹
+
+### Matrix divide (aka domino)
+
+Press `C-S-[` to generate the symbol. Associate with regular division, which is `C-[`.
+
+There is some similarities between this sign and division sign (see [÷](#-4)) - Matrix division looks the same, but in frame.
+
+#### Monadic
+
+'Matrix inverse of'.
+
+#### Dyadic
+
+'Matrix division by'.
+
+Both _rval_ and _lval_ must be a simple numeric array of rank 2 or less, and _rval_ must be non-singular.
+A scalar argument is treated as a matrix with one-element. If argument is a vector, it is treated as a single column matrix.
+The number of rows in both arguments must be the same, and _rval_ must have at least the same number of rows as columns.
+
+The _result_ is the matrix division of _lval_ by _rval_. That is, the matrix product `rval +.× result = lval`.
+
+_result_ is determined such that `(lval - rval +.× result) * 2` is minimised.
+
+The shape of _result_ is `(1↓⍴ rval), 1↓⍴ lval`.
+
+```apl
+    (1 4⍴1 2 3 4) ⌹ 2
+0.5 1 1.5 2
+    (2 4⍴1 2 3 4 5 6 7 8) ⌹ 1 2
+2.2 2.8 3.4 4
+      (2 4⍴1 2 3 4 5 6 7 8) ⌹ 2
+LENGTH ERROR
+      (2 4⍴1 2 3 4 5 6 7 8)⌹2
+                           ∧
+    (2 4⍴1 2 3 4 5 6 7 8) ⌹ (2 2⍴1 2 3 4)
+ 3 2 1 0
+¯1 0 1 2
+```
+
+For least square method and linear regression examples please see Language Reference Guide from Dyalog.
+
 ## ⌷
 ## ⍞
 ## ⎕
