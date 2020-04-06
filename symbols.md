@@ -280,7 +280,7 @@ base← 16⍟256 512 1024 2048 4096 ⍝ ... base is vector 2 2.25 2.5 2.75 3
 
 Press `C-S-[` to generate the symbol. Associate with regular division, which is `C-[`.
 
-There is some similarities between this sign and division sign (see [÷](#-4)) - Matrix division looks the same, but in frame.
+There are some similarities between this sign (⌹) and division sign ([÷](#-4)) - Matrix division looks the same, but in frame.
 
 #### Monadic
 
