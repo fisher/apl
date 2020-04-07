@@ -23,7 +23,7 @@ TOC-like table
 One rune per day challenge
 ==========================
 
-I decided to spend a small fraction of my time each day for just one symbol from the language. The trick is in this `each day` part. First day will be exception, because it's nothing special about comments, assignments and arythmetics.
+I decided to spend a small fraction of my time each day for just one symbol from the language. The trick is in this `each day` part. First day will be an exception, because it's nothing special about comments, assignments and arythmetics.
 
 ## ⍝
 
