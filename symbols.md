@@ -317,9 +317,74 @@ LENGTH ERROR
 For least square method and linear regression examples please see Language Reference Guide from Dyalog.
 
 ## ⌷
+
+### Index (axis)
+
 ## ⍞
+
+### Quoted quad
+
 ## ⎕
+
+### Quad
+
 ## ⍠
+
+### Variant
+
 ## ⌸
+
+### Key
+
 ## !
+
+### Exlamation mark
+
 ## ?
+
+### Question mark
+
+## ○
+
+### Circular (π-times)
+
+## \|
+
+### Residue, or magnitude
+
+## ⌈
+
+### Maximum, ceiling
+
+## ⌊
+
+### Minimum, floor
+
+## ⊥
+
+### Decode
+
+## ⊤
+
+### Encode
+
+## ⊣
+
+### Same, left
+
+## ⊢
+
+### Same, right
+
+## ≡
+### Depth, match
+## ≢
+### Not match, tally
+## ↑
+### Disclose, mix, take
+## ↓
+### Drop, split
+## ⊂
+## ⊃
+## ⍋
+## ⍒
