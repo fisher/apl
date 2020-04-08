@@ -21,6 +21,8 @@ TOC-like table
 
 [ß](#-79)
 
+Placeholder for [Other, unsorted](#-80) symbols and notes
+
 One rune per day challenge
 ==========================
 
@@ -467,3 +469,17 @@ Where did I find it? I copied it from somewhere
 Cannot find it in Dyalog APL language reference, tought.
 
 Maybe should be removed from the index as well.
+
+## Other, unsorted
+
+Just a placeholder for now.
+
+Maybe will take shortnotes here.
+
+Maybe it's a place to describe operators.
+
+Or trains.
+
+Or Quad-symbols.
+
+But unsorted. For now.
