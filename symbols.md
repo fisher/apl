@@ -459,3 +459,11 @@ Edition, and Partition is instead represented by ⎕U2286.
 ## ⍙
 
 ## ß
+
+### it's not Beta, it seems like german double S
+
+Where did I find it? I copied it from somewhere
+
+Cannot find it in Dyalog APL language reference, tought.
+
+Maybe should be removed from the index as well.
