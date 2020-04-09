@@ -456,7 +456,53 @@ Edition, and Partition is instead represented by ⎕U2286.
 ## ∇
 ## ∆
 ## ∨
+
+### Logical Or
+
+#### Monadic
+
+#### Dyadic
+
+Greatest Common Divisor
+
 ## ∧
+
+### Logical And
+
+#### Monadic
+
+#### Dyadic
+
+##### If _rval_ and _lval_ are both boolean,
+
+...then _result_ is also boolean, nothing special about logical and,
+
+```apl
+      0 1 0 1 ∧ 1 1 0 0
+0 1 0 0
+      0 1 0 1 ∧ 1
+0 1 0 1
+      0 1 0 1 ∧ 0
+0 0 0 0
+      1 ∧ 1 1 0 0
+1 1 0 0
+      0 ∧ 1 1 0 0
+0 0 0 0
+```
+
+##### If one of, or both _lval_ and _rval_ are numeric,
+
+...then _result_ is the Least Common Multiple of _lval_ and _rval_.
+
+```apl
+      0 1 2 3 5 15 ∧ 1 2 3 4 5 35
+0 2 6 12 5 105
+      5 ∧ 1 2 3 4 5 6 7 8 9
+5 10 15 20 5 30 35 40 45
+```
+
+**NB:** in this case, `⎕CT` and `⎕DCT` are implicit arguments to a '^' function.
+
 ## ⍱
 ## ⍲
 ## ⍫
