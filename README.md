@@ -123,6 +123,7 @@ More [details about these symbols](symbols.md), including meaning and usage.
 | ⎕NC    | tells if Rarg is already defined in the current ws (retval 0 if not defined, 2 when variable, 3 function)
 | ⎕LX    | can contain a single character for execution after the ws has been loaded
 | ⎕EX 'EXAMPLE' | erases the object called EXAMPLE
+| ⎕NULL  | NULL item
 
 # Commands
 
