@@ -4,7 +4,7 @@
 
 ⍝ ← +-×÷*⍟⌹○!? |⌈⌊⊥⊤⊣⊢ =≠≤<>≥≡≢ ∨∧⍱⍲ ↑↓⊂⊃⎕⍋⍒ ⍳⍷∪∩∊~ /\⌿⍀,⍪⍴⌽⊖⍉ ¨⍨⍣.∘⍤ ⍞⎕⍠⌸⍎⍕ ⋄→⍵⍺∇& ⍙∆ß¢⍫⌶ ¯⍬
 
-More [details about these symbols](symbols.md), including meaning and usage.
+╭☞ ͡° ͜ʖ ͡°)╭☞ More [details about these symbols](symbols.md), including meaning and usage.
 
 # The keyboard
 
