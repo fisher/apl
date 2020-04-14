@@ -353,6 +353,27 @@ For least square method and linear regression examples please see Language Refer
 
 ### Circular (π-times)
 
+#### Monadic
+
+So called π× or pi-times. Press 'C-o' to enter the symbol.
+
+Multiplication by the value of π constant, so _rval_ should be numeric, and _result_ will be numeric.
+
+```apl
+    ○0 1 2
+0 3.1415926535898 6.2831853071796
+    ○1j2 2j1 1j1
+3.1415926535898J6.2831853071796 6.2831853071796J3.1415926535898 3.1415926535898J3.1415926535898
+```
+
+Non-numeric _rval_ produces DOMAIN ERROR.
+
+#### Dyadic
+
+So called 'circular'. Key combo is 'C-o'.
+
+_Result_ depends on the _lval_ value, which can be an integer in the range `¯12 ... 12`. The _rval_ should be numeric in any case. _Result_ is always numeric.
+
 ## \|
 
 ### Residue, or magnitude
