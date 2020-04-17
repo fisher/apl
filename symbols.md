@@ -325,29 +325,57 @@ For least square method and linear regression examples please see Language Refer
 
 ### Index (axis)
 
+#### Monadic
+
+#### Dyadic
+
 ## ⍞
 
 ### Quoted quad
+
+#### Monadic
+
+#### Dyadic
 
 ## ⎕
 
 ### Quad
 
+#### Monadic
+
+#### Dyadic
+
 ## ⍠
 
 ### Variant
+
+#### Monadic
+
+#### Dyadic
 
 ## ⌸
 
 ### Key
 
+#### Monadic
+
+#### Dyadic
+
 ## !
 
 ### Exlamation mark
 
+#### Monadic
+
+#### Dyadic
+
 ## ?
 
 ### Question mark
+
+#### Monadic
+
+#### Dyadic
 
 ## ○
 
