@@ -49,6 +49,12 @@ foo/bar ⍝ ... blablabla
 
 ### Assingment
 
+#### Monadic
+
+_No use_
+
+#### Dyadic
+
 Assigns _rval_ to the _lval_. Just press `C-]` to generate the symbol.
 
 ```apl
@@ -57,6 +63,17 @@ another_variable ← 200 + a
 (yet_another1 yet_another2) ← 100   ⍝ ... yet_another1 = 100, yet_another2 = 100
 (yet_another1 yet_another2) ← 10 20  ⍝ ... yet_another1 = 10, yet_another2 = 20
 var1 ← var2 ← var3 ← 0  ⍝ ... all three vars are 0 now
+```
+
+#### Assignment with index
+
+Reading right to left, `Variable[index_vector] ← values_vector` means assignment of _values_vector_ to (vector) _Variable_ addressed by _index_vector_.
+
+```apl
+var ← ⍳5           ⍝ ... var is 1 2 3 4 5
+var[2 3] ← 111     ⍝ ... var is 1 111 111 4 5
+var[2 3] ← 222 333 ⍝ ... var is 1 222 333 4 5
+var[4 4] ← 444 555 ⍝ ... var is 1 222 333 555 5
 ```
 
 ## +
@@ -325,9 +342,17 @@ For least square method and linear regression examples please see Language Refer
 
 ### Index (axis)
 
+Press `C-S-L` to generate the symbol. Sometimes called _squad index_ or _squad indexing_. Don't confuse it with quad symbol (which is slightly wider, `⎕`) and with two square brackets ([]).
+
 #### Monadic
 
+_No info_
+
 #### Dyadic
+
+#### Special case, as operator together with square brackets
+
+So called _index with axis_, in the form _lval_ ⌷[_index_] _rval_
 
 ## ⍞
 
