@@ -406,7 +406,31 @@ So called _index with axis_, in the form _lval_ ⌷[_index_] _rval_
 
 #### Monadic
 
+Factorial.
+
+```apl
+      !1 2 3 4 5
+1 2 6 24 120
+```
+
 #### Dyadic
+
+Binomial Coefficient. Number of combinations of _rval_ items taken _lval_ at a time
+
+```apl
+      1 2 3 4 5 6!6
+6 15 20 15 6 1
+      2!4 5 6 7 8
+6 10 15 21 28
+      3!4 5 6 7 8
+4 10 20 35 56
+      4!4 5 6 7 8
+1 5 15 35 70
+      5!4 5 6 7 8
+0 1 6 21 56
+      6!4 5 6 7 8
+0 0 1 7 28
+```
 
 ## ?
 
