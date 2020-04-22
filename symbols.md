@@ -402,7 +402,7 @@ So called _index with axis_, in the form _lval_ ⌷[_index_] _rval_
 
 ## !
 
-### Exlamation mark
+### Exlamation mark (factorial, binomial)
 
 #### Monadic
 
@@ -415,7 +415,7 @@ Factorial.
 
 #### Dyadic
 
-Binomial Coefficient. Number of combinations of _rval_ items taken _lval_ at a time
+Binomial coefficient. Number of combinations of _rval_ items taken _lval_ at a time
 
 ```apl
       1 2 3 4 5 6!6
@@ -434,11 +434,28 @@ Binomial Coefficient. Number of combinations of _rval_ items taken _lval_ at a t
 
 ## ?
 
-### Question mark
+### Question mark (Roll, Deal)
 
 #### Monadic
 
+Roll.
+
 #### Dyadic
+
+Deal. Takes sample of lenght _lval_ out of set of integers created by ⍳_rval_, i.e. first _rval_ integers, starting from ⎕IO.
+
+Both arguments should be scalar, both positive integers, _rval_ should be greater than or equal to _lval_.
+
+Again, it doesn't work with vectors.
+
+```apl
+      2?8
+3 6
+      8?8
+7 2 4 3 1 5 6 8
+```
+
+⎕IO and ⎕RL are implicit arguments of Deal. A side effect of Deal is to change the value of ⎕RL.
 
 ## ○
 
