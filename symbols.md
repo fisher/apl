@@ -534,6 +534,47 @@ _Result_ depends on the _lval_ value, which can be an integer in the range `¯12
 ## ⍴
 ## ⋄
 ## →
+
+### Abort, Branch
+
+#### Nilladic
+
+Abort. This is a special case of the Branch function used in the niladic sense. If it occurs in a
+statement it must be the only symbol in an expression or the only symbol forming an
+expression in a text string to be executed by ⍎. It clears the most recently suspended
+statement and all of its pendent statements from the state indicator.
+The Abort function has no explicit result. The function is not in the function domain
+of operators.
+
+```apl
+   ∇ F
+[1] 'F[1]'
+[2] G
+[3] 'F[3]'
+   ∇
+   ∇ G
+[1] 'G[1]'
+[2] →
+[3] 'G[3]'
+   ∇
+   F
+F[1]
+G[1]
+```
+
+#### Monadic
+
+Branch. _Rval_ may be a scalar or vector which, if not empty, has a simple numeric scalar as its first
+element. The function has no explicit result. It is used to modify the normal
+sequence of execution of expressions or to resume execution after a statement has
+been interrupted. Branch is not in the function domain of operators.
+
+**TODO**
+
+#### Dyadic
+
+_No use_
+
 ## ,
 ## ⍪
 ## ¨
