@@ -486,13 +486,25 @@ _Result_ depends on the _lval_ value, which can be an integer in the range `¯12
 
 ### Residue, or magnitude
 
+#### Monadic
+
+#### Dyadic
+
 ## ⌈
 
 ### Maximum, ceiling
 
+#### Monadic
+
+#### Dyadic
+
 ## ⌊
 
 ### Minimum, floor
+
+#### Monadic
+
+#### Dyadic
 
 ## ⊥
 
