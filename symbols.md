@@ -461,9 +461,11 @@ Again, it doesn't work with vectors.
 
 ### Circular (π-times)
 
+Press 'C-o' to enter the symbol.
+
 #### Monadic
 
-So called π× or pi-times. Press 'C-o' to enter the symbol.
+So called π× or pi-times.
 
 Multiplication by the value of π constant, so _rval_ should be numeric, and _result_ will be numeric.
 
@@ -478,15 +480,35 @@ Non-numeric _rval_ produces DOMAIN ERROR.
 
 #### Dyadic
 
-So called 'circular'. Key combo is 'C-o'.
+So called 'circular'. Key combo is, again, 'C-o'.
 
 _Result_ depends on the _lval_ value, which can be an integer in the range `¯12 ... 12`. The _rval_ should be numeric in any case. _Result_ is always numeric.
 
 ## \|
 
-### Residue, or magnitude
+### Pipe symbol (residue, magnitude)
+
+Usual pipe symbol, press `S-\\` to enter it.
 
 #### Monadic
+
+Magnitude, AKA absolute value. For any numberic _rval_ returns its absolute value. Can operate on arrays.
+
+```apl
+      |¯2 ¯1 0 1 2
+2 1 0 1 2
+      |¯1.5 ¯0.5 0 0.5 1.5
+1.5 0.5 0 0.5 1.5
+```
+
+Note that the magnitude for a complex number (a+ib) is defined to be the square root of the sum of `a` squared and `b` squared, sqrt(a^2+b^2).
+
+```apl
+      |3j4 5j12
+5 13
+      |3j12 3j13
+12.369316876853 13.341664064126
+```
 
 #### Dyadic
 
