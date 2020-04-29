@@ -510,22 +510,52 @@ _Result_ depends on the _lval_ value, which can be an integer in the range `¯12
 
 ### Decode
 
+#### Monadic
+
+#### Dyadic
+
 ## ⊤
 
 ### Encode
+
+#### Monadic
+
+#### Dyadic
 
 ## ⊣
 
 ### Same, left
 
+#### Monadic
+
+#### Dyadic
+
 ## ⊢
 
 ### Same, right
 
+#### Monadic
+
+#### Dyadic
+
 ## ≡
+
 ### Depth, match
+
+#### Monadic
+
+#### Dyadic
+
 ## ≢
+
+Note: depending on the font used, this symbol can be seen as `depth` symbol with slash attached to its left; the proper look should be `depth` symbol that is crossed out by a slash, from top right to bottom left, in one placeholder.
+
 ### Not match, tally
+
+#### Monadic
+
+#### Dyadic
+
 ## ↑
 ### Disclose, mix, take
 ## ↓
