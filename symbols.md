@@ -501,7 +501,7 @@ Magnitude, AKA absolute value. For any numberic _rval_ returns its absolute valu
 1.5 0.5 0 0.5 1.5
 ```
 
-Note that the magnitude for a complex number (`a`+i`b`) is defined to be the square root of the sum of `a` squared and `b` squared, sqrt(a<sup>2</sup>+b<sup>2</sup>).
+Note that the magnitude for a complex number (`a`+i`b`) is defined to be the square root of the sum of `a` squared and `b` squared, i.e. sqrt(a<sup>2</sup>+b<sup>2</sup>).
 
 ```apl
       |3j4 5j12
@@ -511,6 +511,8 @@ Note that the magnitude for a complex number (`a`+i`b`) is defined to be the squ
 ```
 
 #### Dyadic
+
+Residue
 
 ## ⌈
 
