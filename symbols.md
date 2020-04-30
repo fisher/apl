@@ -512,7 +512,17 @@ Note that the magnitude for a complex number (`a`+i`b`) is defined to be the squ
 
 #### Dyadic
 
-Residue
+Residue.
+
+Arguments are numeric scalars/arrays.
+
+For positive arguments, _result_ is the remainder when _rval_ is divided by _lval_. If _lval_=0, _result_ equals to _rval_.
+
+For other argument values, _result_ is defined as _rval_-_lval_×⌊_rval_÷_lval_+0=_lval_.
+This expression also applies when _lval_ and/or _rval_ are complex but the simple ⌊ is replaced by
+the `CpxFloor` function. See [Complex Floor](#-18) function.
+
+Since this operation involves division, ⎕CT and ⎕DCT are implicit arguments of _Residue_.
 
 ## ⌈
 
