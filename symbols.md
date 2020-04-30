@@ -519,9 +519,23 @@ Arguments are numeric scalars/arrays.
 For positive arguments, _result_ is the remainder when _rval_ is divided by _lval_. If _lval_=0, _result_ equals to _rval_.
 
 For other argument values, _result_ is defined as `rval - lval × ⌊ rval ÷ lval + 0 = lval`.
-This expression also applies when _lval_ and/or _rval_ are complex but the simple ⌊ is replaced by
+This expression also applies when _lval_ and/or _rval_ are complex but the simple `⌊` is replaced by
 the `CpxFloor` function. See [Complex Floor](#-18) function.
 
+```apl
+      1 2 3 4 5 6|6
+0 0 0 2 1 0
+      3|3 4 5 6
+0 1 2 0
+      4|4 5 6 7 8 9 10 11 12
+0 1 2 3 0 1 2 3 0
+      3 3 ¯3 ¯3|5 ¯5 4 ¯4
+2 1 ¯2 ¯1
+      0.5|3.1415 ¯1 ¯0.7
+0.1415 0 0.3
+      1j2|2j3 3j4 5j6
+1J1 ¯1J1 0J1
+```
 Since this operation involves division, ⎕CT and ⎕DCT are implicit arguments of _Residue_.
 
 ## ⌈
