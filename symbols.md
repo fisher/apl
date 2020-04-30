@@ -518,7 +518,7 @@ Arguments are numeric scalars/arrays.
 
 For positive arguments, _result_ is the remainder when _rval_ is divided by _lval_. If _lval_=0, _result_ equals to _rval_.
 
-For other argument values, _result_ is defined as _rval_-_lval_×⌊_rval_÷_lval_+0=_lval_.
+For other argument values, _result_ is defined as `rval - lval × ⌊ rval ÷ lval + 0 = lval`.
 This expression also applies when _lval_ and/or _rval_ are complex but the simple ⌊ is replaced by
 the `CpxFloor` function. See [Complex Floor](#-18) function.
 
