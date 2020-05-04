@@ -648,10 +648,6 @@ be the same. The _result_ is the array of minimum elements from two sets of argu
 1 2 3 3 3
       1 2 3 4 5⌊5 4 3 2 1
 1 2 3 2 1
-      (2 3p(1 2 3 4 5 6))⌊2 3⍴3
-VALUE ERROR: Undefined name: p
-      (2 3 p(1 2 3 4 5 6))⌊2 3⍴3
-           ∧
       (2 3⍴(1 2 3 4 5 6))⌊2 3⍴3
 1 2 3
 3 3 3
