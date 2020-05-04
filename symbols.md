@@ -546,6 +546,18 @@ Press `C-s` to generate the symbol.
 
 #### Monadic
 
+Ceiling.
+
+The argument should be a numeric array.
+
+The _ceiling_ function is defined in terms of [floor](#-18) as `⌈ rval ←→ - ⌊ -rval`.
+
+If an element of _rval_ is real, the corresponding element of _result_ is the least integer greater
+than or equal to the value of _rval_.
+
+If an element of _rval_ is complex, the corresponding element of _result_ depends on the
+relationship between the real and imaginary parts of the numbers in _rval_.
+
 #### Dyadic
 
 Maximum.
