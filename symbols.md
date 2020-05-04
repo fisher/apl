@@ -887,6 +887,9 @@ Press `C-0` to generate the symbol. More convenient `S-6` will also work, though
 ## ⍱
 ## ⍲
 ## ⍫
+
+On my keyboard in Dyalog APL session it's `C-S-2`. No mention of the symbol in 'Mastering Dyalog APL', nor in 'Dyalog APL Language Reference guide'. After rendering i see a _del_ symbol with tilda on top of it.
+
 ## ⍙
 
 ### Delta-underscored or delta-underbar
