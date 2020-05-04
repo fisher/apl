@@ -825,9 +825,14 @@ Edition, and Partition is instead represented by ⎕U2286.
 
 Press `C-h` to generate the symbol.
 
-#### Monadic
+This symbol can be used in regular variable names along with other alphanumeric symbols,
 
-#### Dyadic
+```apl
+      a b←4 5
+      ∆←a-b
+      ∆
+¯1
+```
 
 ## ∨
 
