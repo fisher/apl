@@ -820,6 +820,15 @@ Edition, and Partition is instead represented by ⎕U2286.
 
 ## ∇
 ## ∆
+
+### Delta
+
+Press `C-h` to generate the symbol.
+
+#### Monadic
+
+#### Dyadic
+
 ## ∨
 
 ### Logical Or
@@ -833,6 +842,8 @@ Greatest Common Divisor
 ## ∧
 
 ### Logical And
+
+Press `C-0` to generate the symbol. More convenient `S-6` will also work, though.
 
 #### Monadic
 
@@ -873,15 +884,37 @@ Greatest Common Divisor
 ## ⍫
 ## ⍙
 
+### Delta-underscored or delta-underbar
+
+Press `C-S-;` to enter the symbol. (The 'Mastering Dyalog APL' says it should be `C-.` but it doesn't work for me).  
+
+This symbol can be used in regular variable names along with other alphanumeric symbols,
+
+```apl
+      ⍙var←234 
+      ⍙var
+234
+      a⍙var←23 34 45
+      a⍙var
+23 34 45
+```
+
 ## ß
+
+It is generated when I press `C-.` in my Dyalog APL session.
 
 ### it's not Beta, it seems like german double S
 
-Where did I find it? I copied it from somewhere
+Can be used in variable names,
 
-Cannot find it in Dyalog APL language reference, tought.
-
-Maybe should be removed from the index as well.
+```apl
+     scheiße←0 ¯0
+     scheiße
+0 0
+     ßstaring_letter←¯1 0 1
+     ßstaring_letter
+¯1 0 1
+```
 
 ## Other, unsorted
 
