@@ -558,6 +558,8 @@ than or equal to the value of _rval_.
 If an element of _rval_ is complex, the corresponding element of _result_ depends on the
 relationship between the real and imaginary parts of the numbers in _rval_.
 
+`⎕CT` is an implicit argument of the _ceiling_ function.
+
 #### Dyadic
 
 Maximum.
@@ -587,6 +589,50 @@ This function is undefined for complex numbers.
 Press `C-d` to generate the symbol.
 
 #### Monadic
+
+Floor.
+
+The argument is a numeric array.
+
+##### Real numbers
+
+For real numbers, _result_ is the largest integer value less than or equal to _rval_ within the
+comparison tolerance `⎕CT`.
+
+```apl
+      ⌊¯1.3 ¯0.7 ¯0 0 0.3 0.7 3.9999999999999
+¯2 ¯1 0 0 0 0 3
+      ⌊¯1.3 ¯0.7 ¯0 0 0.3 0.7 3.99999999999999
+¯2 ¯1 0 0 0 0 4
+      ⎕CT
+1E¯14
+```
+
+##### Complex numbers
+
+The following (deliberately) simple function illustrates one way to express the rules
+for evaluating complex _Floor_.
+
+```apl
+     ∇ fl←CpxFloor cpxs;a;b
+[1]   ⍝ Complex floor of scalar complex number (a+ib)
+[2]   a b←9 11○cpxs
+[3]   :If 1>(a-⌊a)+b-⌊b
+[4]      fl←(⌊a)+0J1×⌊b
+[5]   :Else
+[6]      :If (a-⌊a)<b-⌊b
+[7]         fl←(⌊a)+0J1×1+⌊b
+[8]      :Else
+[9]         fl←(1+⌊a)+0J1×⌊b
+[10]     :EndIf
+[11]  :EndIf
+     ∇
+
+     CpxFloor¨1j3.2 3.3j2.5 ¯3.3j¯2.5
+1J3 3J2 ¯3J¯3
+```
+
+`⎕CT` and `⎕DCT` are implicit arguments of the _Floor_ function.
 
 #### Dyadic
 
