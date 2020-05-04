@@ -540,19 +540,70 @@ Since this operation involves division, ⎕CT and ⎕DCT are implicit arguments 
 
 ## ⌈
 
-### Maximum, ceiling
+### Upstile (maximum, ceiling)
+
+Press `C-s` to generate the symbol.
 
 #### Monadic
 
 #### Dyadic
+
+Maximum.
+
+Both arguments should be numeric scalars/arrays. If both argumets are arrays, the length/rank should be the same. _Result_ is the maximum of the two sets of _lval_ and _rval_.
+
+```apl
+      3⌈1 2 3 4
+3 3 3 4
+      1 2 3 4⌈3
+3 3 3 4
+      1 2 3 4⌈4 3 2 1
+4 3 3 4
+      (2 3⍴(1 2 3 4 5 6))⌈2 3⍴3
+3 3 3
+4 5 6
+      0.2 0.3 0.4 0.5⌈0.3
+0.3 0.3 0.4 0.5
+```
+
+This function is undefined for complex numbers.
 
 ## ⌊
 
-### Minimum, floor
+### Downstile (minimum, floor)
+
+Press `C-d` to generate the symbol.
 
 #### Monadic
 
 #### Dyadic
+
+Minimum.
+
+Both arguments should be numeric arrays, floats or integers (no comples numbers!). If both arguments are arrays, the length should
+be the same. The _result_ is the array of minimum elements from two sets of arguments.
+
+```apl
+      3⌊1 2 3 4 5
+1 2 3 3 3
+      1 2 3 4 5⌊3
+1 2 3 3 3
+      1 2 3 4 5⌊5 4 3 2 1
+1 2 3 2 1
+      (2 3p(1 2 3 4 5 6))⌊2 3⍴3
+VALUE ERROR: Undefined name: p
+      (2 3 p(1 2 3 4 5 6))⌊2 3⍴3
+           ∧
+      (2 3⍴(1 2 3 4 5 6))⌊2 3⍴3
+1 2 3
+3 3 3
+      0.2 0.3 0.4 0.5 0.6⌊0.3
+0.2 0.3 0.3 0.3 0.3
+      2j3⌊3j4
+DOMAIN ERROR
+      2J3⌊3J4
+         ∧
+```
 
 ## ⊥
 
