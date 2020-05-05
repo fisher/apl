@@ -819,6 +819,11 @@ Classic Edition: the symbol ⊆ (Left Shoe Underbar) is not available in Classic
 Edition, and Partition is instead represented by ⎕U2286.
 
 ## ∇
+
+### Del (aka Carrot)
+
+Press `C-g` to generate the symbol
+
 ## ∆
 
 ### Delta
@@ -840,9 +845,41 @@ This symbol can be used in regular variable names along with other alphanumeric 
 
 #### Monadic
 
+No use
+
 #### Dyadic
 
-Greatest Common Divisor
+##### If _rval_ and _lval_ are both boolean,
+
+...then _result_ is also boolean, nothing special about logical _or_,
+
+```apl
+      0 0 1 1∨0 1 0 1
+0 1 1 1
+      0∨0 1
+0 1
+      0 1∨0
+0 1
+```
+
+##### If one of, or both _lval_ and _rval_ are numeric,
+
+...then _result_ is the Greatest Common Divisor of _lval_ and _rval_.
+
+```apl
+      10 11 12 13 14 15 16∨4
+2 1 4 1 2 1 4
+      10 11 12 13 14 15 16∨8
+2 1 4 1 2 1 8
+      10 11 12 13 14 15 16∨32
+2 1 4 1 2 1 16
+      10 11 12 13 14 15 16∨5
+5 1 1 1 1 5 1
+      10 11 12 13 14 15 16∨7
+1 1 1 1 7 1 1
+```
+
+**NB:** in this case, `⎕CT` and `⎕DCT` are implicit arguments to a '^' function.
 
 ## ∧
 
@@ -851,6 +888,8 @@ Greatest Common Divisor
 Press `C-0` to generate the symbol. More convenient `S-6` will also work, though.
 
 #### Monadic
+
+No use
 
 #### Dyadic
 
@@ -932,7 +971,7 @@ Logical _Not∘And_ function. Defined only for boolean scalars/arrays. All the o
 
 ## ⍫
 
-On my keyboard in Dyalog APL session it's `C-S-2`. No mention of the symbol in 'Mastering Dyalog APL', nor in 'Dyalog APL Language Reference guide'. After rendering i see a _del_ symbol with tilda on top of it.
+TODO: On my keyboard in Dyalog APL session it's `C-S-2`. No mention of the symbol in 'Mastering Dyalog APL', nor in 'Dyalog APL Language Reference guide'. After rendering i see a _del_ symbol with tilda on top of it.
 
 ## ⍙
 
