@@ -885,7 +885,51 @@ Press `C-0` to generate the symbol. More convenient `S-6` will also work, though
 **NB:** in this case, `⎕CT` and `⎕DCT` are implicit arguments to a '^' function.
 
 ## ⍱
+
+### Nor
+
+Press `C-S-9` to generate the symbol.
+
+#### Monadic
+
+No use
+
+#### Dyadic
+
+Logical _Not∘Or_ function. Defined only for boolean scalars/arrays. All the other values will throw DOMAIN ERROR.
+
+```apl
+      0 0 1 1⍱0
+1 1 0 0
+      0⍱0 1 0 1
+1 0 1 0
+      0 0 1 1⍱0 1 0 1
+1 0 0 0
+```
+
 ## ⍲
+
+### Nand
+
+Press `C-S-0` to generate (FIXME: it doesn't work for me with US keyboard in my Dyalog APL session)
+
+#### Monadic
+
+No use
+
+#### Dyadic
+
+Logical _Not∘And_ function. Defined only for boolean scalars/arrays. All the other values throws DOMAIN ERROR.
+
+```apl
+      0 0 1 1⍲0 1 0 1
+1 1 1 0
+      1⍲0 1 0 1
+1 0 1 0
+      0 0 1 1⍲1
+1 1 0 0
+```
+
 ## ⍫
 
 On my keyboard in Dyalog APL session it's `C-S-2`. No mention of the symbol in 'Mastering Dyalog APL', nor in 'Dyalog APL Language Reference guide'. After rendering i see a _del_ symbol with tilda on top of it.
