@@ -838,6 +838,7 @@ This symbol can be used in regular variable names along with other alphanumeric 
       ∆
 ¯1
 ```
+Again, it has no special meaning as a function/operator.
 
 ## ∨
 
@@ -879,7 +880,7 @@ No use
 1 1 1 1 7 1 1
 ```
 
-**NB:** in this case, `⎕CT` and `⎕DCT` are implicit arguments to a '^' function.
+**NB:** in this case, `⎕CT` and `⎕DCT` are implicit arguments to a '∨' function.
 
 ## ∧
 
