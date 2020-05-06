@@ -808,6 +808,8 @@ _No use_
 ## ⊆
 ### Left Shoe Underbar
 
+(Cannot find the way to print this character; I have copied it from here and it works)
+
 #### Monadic
 
 Classic Edition: the symbol ⊆ (Left Shoe Underbar) is not available in Classic
