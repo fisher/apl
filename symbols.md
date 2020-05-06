@@ -818,6 +818,12 @@ Edition, and Nest is instead represented by ⎕U2286.
 Classic Edition: the symbol ⊆ (Left Shoe Underbar) is not available in Classic
 Edition, and Partition is instead represented by ⎕U2286.
 
+The full usage scheme of the function is _result_ ←  _lval_ ⊆ [_index_] _rval_, where _rval_ is any non-scalar array,
+_lval_ is simple scalar or vector of non-negative integers, _index_ is optional along with its square brackets and should be simple integer scalar (or one-element array) representing an axis of _rval_. If _index_ is not specified, the last axis is used by default.
+
+_Result_ is an array of the elements of _rval_ partitioned according to _lval_.
+
+
 ## ∇
 
 ### Del (aka Carrot)
