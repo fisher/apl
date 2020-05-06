@@ -715,6 +715,27 @@ Note: depending on the font used, this symbol can be seen as `depth` symbol with
 ### Drop, split
 ## ⊂
 ### Left shoe
+
+Press `C-z` to generate the symbol.
+
+#### Monadic
+
+Enclose
+
+#### Dyadic
+
+In APL2 standard, it's always Partition.
+
+In Dyalog APL however, the function depends on the `⎕ML` value.
+
+##### `⎕ML` <3
+
+Partitioned enclose.
+
+##### `⎕ML` ≥ 3
+
+Partition.
+
 ## ⊃
 ### Right shoe
 ## ⍋
