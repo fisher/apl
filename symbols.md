@@ -822,6 +822,12 @@ _No use_
 
 ### Greater than (GT)
 
+Usual symbol `S-.` will work, though there is `C-7` also.
+
+#### Monadic
+
+#### Dyadic
+
 ## ≥
 
 ### Greater than or equal (GTE)
