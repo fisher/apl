@@ -826,7 +826,50 @@ Usual symbol `S-.` will work, though there is `C-7` also.
 
 #### Monadic
 
+No use
+
+```apl
+       >3
+SYNTAX ERROR: The function requires a left argument
+      >3
+      ∧
+```
+
 #### Dyadic
+
+Arguments should be numeric arrays. _Result_ is boolean. _Result_ is 1 if _lval_ is greater than _rval_. Otherwise _result_ is 0.
+
+```apl
+      1 2 3 4 5>3
+0 0 0 1 1
+      3>1 2 3 4 5
+1 1 0 0 0
+      1 2 3 4 5>5 4 3 2 1
+0 0 0 1 1
+```
+
+Note: `⎕CT` and `⎕DCT` are implicit arguments of _Greater_ function.
+
+```apl
+      floats←0.3333333333333 0.33333333333333 0.333333333333333
+      floats>÷3
+0 0 0
+      1 1.000000000000001 1.0000000000001 > 1
+0 0 1
+      ⎕CT
+1E¯14
+      ⎕DCT
+1E¯28
+```
+
+Note: the function is not defined for complex numbers
+
+```apl
+      2j3>3j4
+DOMAIN ERROR
+      2J3>3J4
+         ∧
+```
 
 ## ≥
 
