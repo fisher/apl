@@ -817,7 +817,113 @@ _No use_
 ## ≠
 ## =
 ## ≤
+
+### Less than or equal (LTE)
+
+Use `C-4` to generate the symbol.
+
+#### Monadic
+
+No use
+
+```apl
+      ≤3
+SYNTAX ERROR: The function requires a left argument
+      ≤3
+      ∧
+```
+
+#### Dyadic
+
+Arguments should be numeric arrays. _Result_ is boolean. _Result_ is 1 if _lval_ is lesser than or equal to_rval_. Otherwise _result_ is 0.
+
+```apl
+      1 2 3 4 5≤3
+1 1 1 0 0
+      3≤1 2 3 4 5
+0 0 1 1 1
+      1 2 3 4 5≤5 4 3 2 1
+1 1 1 0 0
+```
+
+Note: `⎕CT` and `⎕DCT` are implicit arguments of _LTE_ (≤) function.
+
+```apl
+      floats←0.3333333333333 0.33333333333333 0.333333333333333
+      floats≤÷3
+1 1 1
+      1 0.999999999999999 0.9999999999999 ≤ 1
+1 1 1
+      1 1.000000000000001 1.0000000000001 ≤ 1
+1 1 0
+      ⎕CT
+1E¯14
+      ⎕DCT
+1E¯28
+```
+
+Note: the function _LTE_ is not defined for complex numbers
+
+```apl
+      2j3≤3j4
+DOMAIN ERROR
+      2J3≤3J4
+         ∧
+```
+
 ## <
+
+### Less than (LT)
+
+Usual symbol `S-,` will work, although there is `C-3` also.
+
+#### Monadic
+
+No use
+
+```apl
+      <3
+SYNTAX ERROR: The function requires a left argument
+      <3
+      ∧
+```
+
+#### Dyadic
+
+Arguments should be numeric arrays. _Result_ is boolean. _Result_ is 1 if _lval_ is lesser than _rval_. Otherwise _result_ is 0.
+
+```apl
+      1 2 3 4 5<3
+1 1 0 0 0
+      3<1 2 3 4 5
+0 0 0 1 1
+      1 2 3 4 5<5 4 3 2 1
+1 1 0 0 0
+```
+
+Note: `⎕CT` and `⎕DCT` are implicit arguments of _Less_ _Than_ function.
+
+```apl
+      floats←0.3333333333333 0.33333333333333 0.333333333333333
+      floats<÷3
+1 0 0
+      1 0.999999999999999 0.9999999999999 <1
+0 0 1
+      ⎕CT
+1E¯14
+      ⎕DCT
+1E¯28
+```
+
+Note: the function _Less_ _Than_ is not defined for complex numbers
+
+```apl
+      2j3<3j4
+DOMAIN ERROR
+      2J3<3J4
+         ∧
+```
+
 ## >
 
 ### Greater than (GT)
