@@ -885,6 +885,14 @@ the larger of the magnitudes of _lval_ and _rval_; geometrically, _lval_=_rval_ 
 magnitude lies on or within a circle centred on the one with larger magnitude, having
 radius `⎕CT` times the larger magnitude.
 
+```apl
+      a←2+0j1×⎕CT
+      a
+2J1E¯14
+      a=2j.00000000000001 2j.0000000000001
+1 0
+```
+
 ## ≤
 
 ### Less than or equal (LTE)
