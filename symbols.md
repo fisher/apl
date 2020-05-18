@@ -702,7 +702,8 @@ DOMAIN ERROR
 
 ## ≢
 
-Note: depending on the font used, this symbol can be seen as `depth` symbol with slash attached to its left; the proper look should be `depth` symbol that is crossed out by a slash, from top right to bottom left, in one placeholder.
+Note: depending on the font used, this symbol can be seen as `depth` symbol with slash attached to its left;
+the proper look should be `depth` symbol that is crossed out by a slash, from top right to bottom left, in one placeholder.
 
 ### Not match, tally
 
@@ -819,7 +820,34 @@ _No use_
 
 ### Not Equal
 
-Press `C-8` to enter the symbol
+Press `C-8` to enter the symbol.
+
+#### Monadic
+
+No use
+
+#### Dyadic
+
+Both arguments can be any array. _Result_ is Boolean. R is 0 if X=Y. Otherwise R is
+1.
+
+Note: `⎕CT` and `⎕DCT` are implicit arguments of `Not Equal` function.
+
+```apl
+      1 ≠ 1.0000000000001
+1
+      1 ≠ 1.00000000000001
+0
+```
+
+Note: Function `Not Equal` can be used as `XOR` function for booleans:
+
+```apl
+      1 0 1 0 ≠ 1 1 0 0
+0 1 1 0
+      1 0 1 0 = 1 1 0 0
+1 0 0 1
+```
 
 ## =
 
