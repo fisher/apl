@@ -564,7 +564,8 @@ relationship between the real and imaginary parts of the numbers in _rval_.
 
 Maximum.
 
-Both arguments should be numeric scalars/arrays. If both argumets are arrays, the length/rank should be the same. _Result_ is the maximum of the two sets of _lval_ and _rval_.
+Both arguments should be numeric scalars/arrays. If both argumets are arrays, the length/rank should be the same.
+_Result_ is the maximum of the two sets of _lval_ and _rval_.
 
 ```apl
       3⌈1 2 3 4
@@ -815,6 +816,11 @@ _No use_
 ## ⍵
 ## ¯
 ## ≠
+
+### Not Equal
+
+Press `C-8` to enter the symbol
+
 ## =
 
 ### Equality
