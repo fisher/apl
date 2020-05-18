@@ -816,6 +816,75 @@ _No use_
 ## ¯
 ## ≠
 ## =
+
+### Equality
+
+Regular `=` sign will work, but there is `C-5` also.
+
+#### Monadic
+
+No use
+
+```apl
+      =1
+SYNTAX ERROR: The function requires a left argument
+      =1
+      ∧
+```
+
+#### Dyadic
+
+Both arguments can be any array. _Result_ is boolean.
+
+`⎕CT` and `⎕DCT` are implicit arguments of _Equal_ function.
+
+If arguments are refs, then _result_ is 1 if they are refs to the same object. If _larg_ is a ref and _rval_ is
+not, or vice-versa, then _result_ is 0.
+
+If arguments are character, then _result_ is 1 if they are the same character. If one argument is character and
+other is numeric, then _result_ is 0.
+
+```apl
+      'a' = 'a'
+1
+      'asdf' = 'asdf'
+1 1 1 1
+      'a' = 65
+0
+      1 = 'a'
+0
+      '1' = 1
+0
+```
+
+If arguments are numeric, then _result_ is 1 if _lval_ and _rval_ are within comparison tolerance of each
+other.
+
+For real numbers _lval_ and _rval_, _lval_ is considered equal to _rval_ if `(|lval-rval)` is not greater than
+`⎕CT×(|lval)⌈|rval`.
+
+```apl
+      1= 1
+1
+      1 = 1.0
+1
+      1 = 1.0000000000001
+0
+      1 = 1.00000000000001
+1
+      1 = 0.99999999999999
+1
+      1 = 0.9999999999999
+0
+      ⎕CT
+1E¯14
+```
+
+For complex numbers _result_ is 1 if the magnitude of _lval_-_rval_ does not exceed `⎕CT` times
+the larger of the magnitudes of _lval_ and _rval_; geometrically, _lval_=_rval_ if the number smaller in
+magnitude lies on or within a circle centred on the one with larger magnitude, having
+radius `⎕CT` times the larger magnitude.
+
 ## ≤
 
 ### Less than or equal (LTE)
