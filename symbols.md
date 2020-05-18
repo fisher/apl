@@ -828,8 +828,9 @@ No use
 
 #### Dyadic
 
-Both arguments can be any array. _Result_ is Boolean. R is 0 if X=Y. Otherwise R is
-1.
+Both arguments can be any array. _Result_ is Boolean.
+
+_Result_ is 0 if _lval_=_rval_. Otherwise, _result_ is 1.
 
 Note: `⎕CT` and `⎕DCT` are implicit arguments of `Not Equal` function.
 
