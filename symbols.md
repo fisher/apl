@@ -816,6 +816,32 @@ _No use_
 ## ⍺
 ## ⍵
 ## ¯
+
+### Negative
+
+#### Monadic
+
+
+```apl
+      ¯1 2 3
+¯1 2 3
+      ¯(1 2 3)
+SYNTAX ERROR: Invalid token
+      ¯(1 2 3)
+      ∧
+```
+
+#### Dyadic
+
+No use
+
+```apl
+      2¯3
+SYNTAX ERROR: Invalid token
+      2¯ 3
+      ∧
+```
+
 ## ≠
 
 ### Not Equal
