@@ -1,6 +1,6 @@
 # Playing around APL
 
-Nota Bene: this is work in progress
+**Nota Bene**: this is work in progress
 
 # The charset
 
