@@ -820,7 +820,9 @@ _No use_
 ## ⍵
 ## ¯
 
-### Negative
+### Negative sign
+
+Press `C-2` to enter the symbol
 
 #### Monadic
 
