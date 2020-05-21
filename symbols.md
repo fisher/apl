@@ -838,6 +838,18 @@ SYNTAX ERROR: Invalid token
       ∧
 ```
 
+Can be applied only to numeric literals
+
+```apl
+      a←2
+      ¯2
+¯2
+      ¯a
+SYNTAX ERROR: Invalid token
+      ¯ a
+      ∧
+```
+
 #### Dyadic
 
 No use
