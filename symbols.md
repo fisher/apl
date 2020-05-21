@@ -818,6 +818,24 @@ _No use_
 ## ¢
 ## ⍎
 ## ⍕
+
+### Thorn symbol, AKA Format
+
+Press `C-S-'` to generate the symbol
+
+#### Monadic
+
+Monadic format.
+
+The argument can be any array. _Result_ is a simple character array which will display identically to
+the display produced by the argument. The result is independent of `⎕PW`. If _rval_ is a simple
+character array, then _result_ is _rval_.
+
+#### Dyadic
+
+Dyadic format.
+
+
 ## ⍺
 
 ### Alpha
