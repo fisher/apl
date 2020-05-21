@@ -819,6 +819,58 @@ _No use_
 ## ⍎
 ## ⍕
 ## ⍺
+
+### Alpha
+
+Press `C-a` to generate the symbol.
+
+Used as a predefined variable inside anonymous (lambda) function, or _unnamed dfns_. Contains left argument to lambda function.
+
+The variable is read-only except the case when there is no left argument to the lambda function. This can be used to set the default value for the left argument:
+
+```apl
+      fn←{⍺←10⋄100+⍺+⍵}
+      20 fn 3
+123
+      fn 3
+113
+```
+
+Not defined outside the scope of the lambda:
+
+```apl
+      ⍺
+SYNTAX ERROR
+      ⍺
+      ∧
+```
+
+Has no special meaning as a monadic function:
+
+```apl
+      ⍺ 3
+SYNTAX ERROR
+      ⍺ 3
+      ∧
+```
+
+Cannot be used as a variable name or inside the variable name:
+
+```apl
+      ⍺←2
+SYNTAX ERROR
+      ⍺←2
+      ∧
+      ⍺lpha←1
+SYNTAX ERROR
+      ⍺ lpha←1
+      ∧
+      l⍺pha←2
+SYNTAX ERROR
+      l ⍺ pha←2
+        ∧
+```
+
 ## ⍵
 
 ### Omega
