@@ -822,12 +822,13 @@ _No use_
 ## ⍵
 ## ¯
 
-### Negative sign
+### High negative sign
 
 Press `C-2` to enter the symbol
 
 #### Monadic
 
+Used to denote a negative number. Not the same as regular `-` (minus) sign.
 
 ```apl
       ¯1 2 3
