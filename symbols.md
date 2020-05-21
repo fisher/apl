@@ -820,6 +820,13 @@ _No use_
 ## ⍕
 ## ⍺
 ## ⍵
+
+### Omega
+
+Press `C-w` to generate the symbol.
+
+Used as a predefined variable containing _rval_ in anonymous (lambda) functions.
+
 ## ¯
 
 ### High negative sign
