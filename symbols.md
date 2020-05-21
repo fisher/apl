@@ -1,3 +1,5 @@
+*Nota Bene*: work in progress
+
 The charset
 ===========
 
