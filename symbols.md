@@ -825,7 +825,23 @@ _No use_
 
 Press `C-w` to generate the symbol.
 
-Used as a predefined variable containing _rval_ in anonymous (lambda) functions.
+Used as a predefined variable containing _rval_ to anonymous (lambda) function, or _unnamed dfns_. It is defined only inside the lambda function, between the curly braces `{` and `}`.
+
+The variable is read-only (it cannot be modified in any way).
+
+```
+      fn←{100+⍵+10}
+      fn 2
+112
+      ⍵+2
+SYNTAX ERROR
+      ⍵+2
+      ∧
+      ⍵
+SYNTAX ERROR
+      ⍵
+      ∧
+```
 
 ## ¯
 
