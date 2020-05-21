@@ -1310,6 +1310,13 @@ Press `C-S-9` to generate the symbol.
 
 No use
 
+```apl
+      ⍱78
+SYNTAX ERROR: The function requires a left argument
+      ⍱78
+      ∧
+```
+
 #### Dyadic
 
 Logical _Not∘Or_ function. Defined only for boolean scalars/arrays. All the other values will throw DOMAIN ERROR.
