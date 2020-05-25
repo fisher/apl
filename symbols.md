@@ -844,7 +844,8 @@ Press `C-a` to generate the symbol.
 
 Used as a predefined variable inside anonymous (lambda) function, or _unnamed dfns_. Contains left argument to lambda function.
 
-The variable is read-only except the case when there is no left argument to the lambda function. This can be used to set the default value for the left argument:
+The variable is read-only except the case when there is no left argument to the lambda function. This can be used
+to set the default value for the left argument:
 
 ```apl
       fn←{⍺←10⋄100+⍺+⍵}
