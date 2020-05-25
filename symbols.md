@@ -645,8 +645,9 @@ for evaluating complex _Floor_.
 
 Minimum.
 
-Both arguments should be numeric arrays, floats or integers (no comples numbers!). If both arguments are arrays, the length should
-be the same. The _result_ is the array of minimum elements from two sets of arguments.
+Both arguments should be numeric arrays, floats or integers (no comples numbers!).
+If both arguments are arrays, the length should be the same.
+The _result_ is the array of minimum (corresponding) elements from two sets of arguments.
 
 ```apl
       3⌊1 2 3 4 5
