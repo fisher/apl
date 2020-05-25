@@ -818,6 +818,31 @@ _No use_
 ## ⍬
 ## .
 ## ¢
+
+It is generated when I press `C-S-.` in my Dyalog APL session.
+
+Don't see any application for the symbol. It can't be used in variable names, it has no special meaning as a function.
+
+```apl
+      ¢
+SYNTAX ERROR: Invalid token
+      ¢
+      ∧
+      ¢←0
+SYNTAX ERROR: Invalid token
+      ¢←0
+      ∧
+
+      ¢1
+SYNTAX ERROR: Invalid token
+      ¢1
+      ∧
+      1¢0
+SYNTAX ERROR: Invalid token
+      1 ¢0
+        ∧
+```
+
 ## ⍎
 ## ⍕
 
