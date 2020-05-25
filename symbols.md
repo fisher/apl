@@ -361,7 +361,8 @@ For least square method and linear regression examples please see Language Refer
 
 ### Index (axis)
 
-Press `C-S-L` to generate the symbol. Sometimes called _squad index_ or _squad indexing_. Don't confuse it with quad symbol (which is slightly wider, `⎕`) and with two square brackets ([]).
+Press `C-S-L` to generate the symbol. Sometimes called _squad index_ or _squad indexing_.
+Don't confuse it with quad symbol (which is slightly wider, `⎕`) and with two square brackets ([]).
 
 #### Monadic
 
