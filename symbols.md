@@ -758,6 +758,23 @@ Partition.
 ## ∩
 ## ⍴
 ## ⋄
+
+### Diamond
+
+Not to be confused with _jot_ symbol (see [∘](#-55)). This one looks like a rhombus, or diamond, while the _jot_ symbol is just a small circle.
+
+Press `C-\` to generate the symbol.
+
+#### Dyadic
+
+Optionally separates a single APL statement into 2 expressions. When a statement is executed, the expressions separated by diamods are evaluated sequentially from left to right.
+
+```apl
+      A←1 ⋄ A←7 ⋄ A←3
+      A
+3
+```
+
 ## →
 
 ### Abort, Branch
