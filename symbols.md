@@ -4,7 +4,7 @@ The charset
 ===========
 
  `⍝ ←+-×÷*⍟⌹○!? |⌈⌊⊥⊤⊣⊢ =≠≤<>≥≡≢ ∨∧⍱⍲ ↑↓⊂⊃⌷⍋⍒ ⍳⍷∪∩∊~ /\⌿⍀,⍪⍴⌽⊖⍉ ¨⍨⍣.∘⍤ ⍞⎕⍠⌸⍎⍕ ⋄→⍵⍺∇& ⍙∆ß¢⍫⌶ ¯⍬`
- 
+
 TOC-like table
 ==============
 
@@ -816,6 +816,21 @@ _No use_
 ## ⍉
 ## ∘
 ## ⍬
+
+### Zilde
+
+Press `C-S-=` to generate the symbol
+
+Syntactic sugar for the empty vector (⍳0). Seen as a numeric constant.
+
+```apl
+⍬
+
+⍴⍬
+0
+
+```
+
 ## .
 
 ### Period (or dot, or point)
@@ -1523,7 +1538,7 @@ Press `C-S-;` to enter the symbol. (The 'Mastering Dyalog APL' says it should be
 This symbol can be used in regular variable names along with other alphanumeric symbols,
 
 ```apl
-      ⍙var←234 
+      ⍙var←234
       ⍙var
 234
       a⍙var←23 34 45
