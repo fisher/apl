@@ -824,11 +824,24 @@ Press `C-S-=` to generate the symbol
 Syntactic sugar for the empty vector (⍳0). Seen as a numeric constant.
 
 ```apl
-⍬
+      ⍬
 
-⍴⍬
+      ⍴⍬
 0
-
+      DPX ⍬
+┌⊖┐
+│0│
+└~┘
+      ⍬23
+   23
+      12⍬23
+12    23
+      DPX 12⍬23
+┌→──────────┐
+│    ┌⊖┐    │
+│ 12 │0│ 23 │
+│    └~┘    │
+└∊──────────┘
 ```
 
 ## .
