@@ -821,7 +821,7 @@ _No use_
 
 Press `C-S-=` to generate the symbol
 
-Syntactic sugar for the empty vector (⍳0). Seen as a numeric constant.
+Syntactic sugar for the empty vector (`⍳0`). Seen as a numeric constant.
 
 ```apl
       ⍬
