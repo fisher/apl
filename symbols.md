@@ -817,6 +817,29 @@ _No use_
 ## ∘
 ## ⍬
 ## .
+
+### Period (or dot, or point)
+
+Regular full period sign, `.`, it has a special meaning in the APL syntax.
+
+#### Decimal point
+
+In numeric literals, means decimal point. That is, it splits up integer part to the left of it from the fractional part to the right. Examples are `1.2`, `21.34`, `12.34j5.6`.
+
+#### Name separator
+
+TODO: WTF
+
+#### Inner product
+
+As part of _inner product_ operator: `lval f.g rval`, where `f` and `g` are functions allowed in inner product operator.
+
+#### Outer product
+
+Syntax for _outer product_ includes the _point_ in it: `lval ∘.g rval`, where `g` is a funcion allowed in outer product operator.
+
+#### Decimal point
+
 ## ¢
 
 It is generated when I press `C-S-.` in my Dyalog APL session.
