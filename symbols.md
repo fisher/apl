@@ -815,6 +815,17 @@ _No use_
 ## ⊖
 ## ⍉
 ## ∘
+
+### Jot
+
+Not to be confused with `○` symbol ([○](#-15), _circular_, or _π-times_). This particular one is smaller.
+
+Press `C-j` to generate the symbol.
+
+#### Compose operator
+
+TODO: very wide topic here
+
 ## ⍬
 
 ### Zilde
