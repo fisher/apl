@@ -842,6 +842,12 @@ Syntactic sugar for the empty vector (`⍳0`). Seen as a numeric constant.
 │ 12 │0│ 23 │
 │    └~┘    │
 └∊──────────┘
+      DPX 12 (⍳0) 23
+┌→──────────┐
+│    ┌⊖┐    │
+│ 12 │0│ 23 │
+│    └~┘    │
+└∊──────────┘
 ```
 
 ## .
