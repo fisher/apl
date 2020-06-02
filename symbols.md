@@ -402,6 +402,9 @@ So called _index with axis_, in the form _lval_ ⌷[_index_] _rval_
 
 ### Key
 
+Classic Edition: the symbol `⌸` is not available in Classic Edition, and the _Key_
+operator is instead represented by `⎕U2338`.
+
 #### Monadic
 
 #### Dyadic
