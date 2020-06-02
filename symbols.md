@@ -409,6 +409,15 @@ operator is instead represented by `⎕U2338`.
 
 #### Monadic
 
+No use.
+
+```apl
+      ⌸1
+SYNTAX ERROR
+      ⌸1
+      ∧
+```
+
 #### Dyadic
 
 ## !
