@@ -784,6 +784,8 @@ Press `C-\` to generate the symbol.
 
 #### Dyadic
 
+Statement separator.
+
 Optionally separates a single APL statement into 2 expressions. When a statement is executed, the expressions separated by diamods are evaluated sequentially from left to right.
 
 ```apl
