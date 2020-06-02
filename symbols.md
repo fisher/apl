@@ -460,6 +460,9 @@ Binomial coefficient. Number of combinations of _rval_ items taken _lval_ at a t
 
 Roll.
 
+__NB:__ `⎕IO` and `⎕RL` are implicit arguments of _Roll_. A side effect of _Roll_ is to change the
+value of `⎕RL`.
+
 #### Dyadic
 
 Deal. Takes sample of lenght _lval_ out of set of integers created by ⍳_rval_, i.e. first _rval_ integers, starting from ⎕IO.
