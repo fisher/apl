@@ -921,8 +921,6 @@ As part of _inner product_ operator: `lval f.g rval`, where `f` and `g` are func
 
 Syntax for _outer product_ includes the _point_ in it: `lval ∘.g rval`, where `g` is a funcion allowed in outer product operator.
 
-#### Decimal point
-
 ## ¢
 
 It is generated when I press `C-S-.` in my Dyalog APL session.
