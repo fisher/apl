@@ -420,6 +420,8 @@ SYNTAX ERROR
 
 #### Dyadic
 
+_Key_ operator in the form _lval_ _f_ ⌸ _rval_, where _lval_ is an optional array, _f_ is a dyadic function, and _rval_ is an array.
+
 ## !
 
 ### Exlamation mark (factorial, binomial)
