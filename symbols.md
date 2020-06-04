@@ -917,9 +917,13 @@ TODO: WTF
 
 As part of _inner product_ operator: `lval f.g rval`, where `f` and `g` are functions allowed in inner product operator.
 
+TODO: elaborate
+
 #### Outer product
 
 Syntax for _outer product_ includes the _point_ in it: `lval ∘.g rval`, where `g` is a funcion allowed in outer product operator.
+
+TODO: elaborate
 
 ## ¢
 
