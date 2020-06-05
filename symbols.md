@@ -245,7 +245,6 @@ var ← 0 0 0 ÷ ¯1 0 1  ⍝ ... var =  0 1 0
 By default, `⎕DIV` equals to 0.
 
 ## *
-
 ### Exponentiation
 
 Regular asterisk sign.
