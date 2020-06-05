@@ -279,7 +279,6 @@ var ← 16 * ÷4 ⍝ ... equals to 2
 ```
 
 ## ⍟
-
 ### Logarithm
 
 Press `C-S-8` to generate the symbol.
