@@ -93,7 +93,6 @@ Shape should agree:
 ```
 
 ## +
-
 ### Plus
 
 Just a regular plus sign.
@@ -117,7 +116,6 @@ res ← 2 3 4 + 10 20 ⍝ ... throws LENGTH ERROR: Mismatched left and right arg
 ```
 
 ## -
-
 ### Minus
 
 Regular minus sign.
