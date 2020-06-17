@@ -1042,7 +1042,6 @@ SYNTAX ERROR
 ```
 
 ## ¯
-
 ### High negative sign
 
 Press `C-2` to enter the symbol
@@ -1084,7 +1083,6 @@ SYNTAX ERROR: Invalid token
 ```
 
 ## ≠
-
 ### Not Equal
 
 Press `C-8` to enter the symbol.
@@ -1118,7 +1116,6 @@ Note: Function `Not Equal` can be used as `XOR` function for booleans:
 ```
 
 ## =
-
 ### Equality
 
 Regular `=` sign will work, but there is `C-5` also.
@@ -1196,7 +1193,6 @@ radius `⎕CT` times the larger magnitude.
 ```
 
 ## ≤
-
 ### Less than or equal (LTE)
 
 Use `C-4` to generate the symbol.
@@ -1251,7 +1247,6 @@ DOMAIN ERROR
 ```
 
 ## <
-
 ### Less than (LT)
 
 Usual symbol `S-,` will work, although there is `C-3` also.
@@ -1304,7 +1299,6 @@ DOMAIN ERROR
 ```
 
 ## >
-
 ### Greater than (GT)
 
 Usual symbol `S-.` will work, though there is `C-7` also.
@@ -1357,7 +1351,6 @@ DOMAIN ERROR
 ```
 
 ## ≥
-
 ### Greater than or equal (GTE)
 
 Press `C-6` to enter the symbol.
@@ -1407,7 +1400,6 @@ DOMAIN ERROR
 ```
 
 ## ⊆
-
 ### Left Shoe Underbar
 
 (Cannot find the way to print this character; I have copied it from here and it works)
@@ -1429,13 +1421,11 @@ _Result_ is an array of the elements of _rval_ partitioned according to _lval_.
 
 
 ## ∇
-
 ### Del (aka Carrot)
 
 Press `C-g` to generate the symbol
 
 ## ∆
-
 ### Delta
 
 Press `C-h` to generate the symbol.
@@ -1451,7 +1441,6 @@ This symbol can be used in regular variable names along with other alphanumeric 
 Again, it has no special meaning as a function/operator.
 
 ## ∨
-
 ### Logical Or
 
 #### Monadic
@@ -1493,7 +1482,6 @@ No use
 **NB:** in this case, `⎕CT` and `⎕DCT` are implicit arguments to a '∨' function.
 
 ## ∧
-
 ### Logical And
 
 Press `C-0` to generate the symbol. More convenient `S-6` will also work, though.
@@ -1535,7 +1523,6 @@ No use
 **NB:** in this case, `⎕CT` and `⎕DCT` are implicit arguments to a '^' function.
 
 ## ⍱
-
 ### Nor
 
 Press `C-S-9` to generate the symbol.
@@ -1565,7 +1552,6 @@ Logical _Not∘Or_ function. Defined only for boolean scalars/arrays. All the ot
 ```
 
 ## ⍲
-
 ### Nand
 
 Press `C-S-0` to generate (FIXME: it doesn't work for me with US keyboard in my Dyalog APL session)
@@ -1592,7 +1578,6 @@ Logical _Not∘And_ function. Defined only for boolean scalars/arrays. All the o
 TODO: On my keyboard in Dyalog APL session it's `C-S-2`. No mention of the symbol in 'Mastering Dyalog APL', nor in 'Dyalog APL Language Reference guide'. After rendering i see a _del_ symbol with tilda on top of it.
 
 ## ⍙
-
 ### Delta-underscored or delta-underbar
 
 Press `C-S-;` to enter the symbol. (The 'Mastering Dyalog APL' says it should be `C-.` but it doesn't work for me).  
