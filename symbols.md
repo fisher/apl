@@ -376,7 +376,6 @@ So called _index with axis_, in the form _lval_ ⌷[_index_] _rval_
 #### Dyadic
 
 ## ⎕
-
 ### Quad
 
 #### Monadic
@@ -384,7 +383,6 @@ So called _index with axis_, in the form _lval_ ⌷[_index_] _rval_
 #### Dyadic
 
 ## ⍠
-
 ### Variant
 
 #### Monadic
@@ -392,7 +390,6 @@ So called _index with axis_, in the form _lval_ ⌷[_index_] _rval_
 #### Dyadic
 
 ## ⌸
-
 ### Key
 
 Press `C-S-k` to generate the symbol.
@@ -414,6 +411,8 @@ SYNTAX ERROR
 #### Dyadic
 
 _Key_ operator in the form _lval_ _f_ ⌸ _rval_, where _lval_ is an optional array, _f_ is a dyadic function, and _rval_ is an array.
+
+TODO: elaborate
 
 ## !
 
