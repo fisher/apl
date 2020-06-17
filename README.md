@@ -39,8 +39,8 @@
 | C-/   |  ⊢  | Same          | right arg             |
 | C-M-1 |  ≡  | Depth of      | Matches
 | C-M-\ |  ≢  |               | Not match
-| C-z   |  ⊂  | Enclose       | Partition
-| C-x   |  ⊃  | Disclose      | Pick
+| C-z   |  ⊂  | Enclose       | Partition             | 'left shoe'
+| C-x   |  ⊃  | Disclose      | Pick                  | 'right shoe'
 | C-S-l |  ⌷  |               | Index
 | C-M-5 |  ⍷   |               | Find
 | C-v   |  ∪  | Unique        | Union
