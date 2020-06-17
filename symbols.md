@@ -312,7 +312,6 @@ base← 16⍟256 512 1024 2048 4096 ⍝ ... base is vector 2 2.25 2.5 2.75 3
 ```
 
 ## ⌹
-
 ### Matrix divide (aka domino)
 
 Press `C-S-[` to generate the symbol. Associate with regular division, which is `C-[`.
@@ -354,8 +353,7 @@ LENGTH ERROR
 For least square method and linear regression examples please see Language Reference Guide from Dyalog.
 
 ## ⌷
-
-### Index (axis)
+### Index (AKA squad)
 
 Press `C-S-L` to generate the symbol. Sometimes called _squad index_ or _squad indexing_.
 Don't confuse it with quad symbol (which is slightly wider, `⎕`) and with two square brackets ([]).
@@ -371,7 +369,6 @@ _No info_
 So called _index with axis_, in the form _lval_ ⌷[_index_] _rval_
 
 ## ⍞
-
 ### Quoted quad
 
 #### Monadic
