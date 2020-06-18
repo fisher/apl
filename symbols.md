@@ -31,7 +31,6 @@ One rune per day challenge
 I decided to spend a small fraction of my time each day for just one symbol from the language. The trick is in this `each day` part. First day will be an exception, because it's nothing special about comments, assignments and arythmetics.
 
 ## ⍝
-
 ### A comment
 
 Nothing special about it, comment out from the symbol till the end of a line.
@@ -470,7 +469,6 @@ Again, it doesn't work with vectors.
 ⎕IO and ⎕RL are implicit arguments of Deal. A side effect of Deal is to change the value of ⎕RL.
 
 ## ○
-
 ### Circular (π-times)
 
 Press 'C-o' to enter the symbol.
@@ -497,7 +495,6 @@ So called 'circular'. Key combo is, again, 'C-o'.
 _Result_ depends on the _lval_ value, which can be an integer in the range `¯12 ... 12`. The _rval_ should be numeric in any case. _Result_ is always numeric.
 
 ## \|
-
 ### Pipe symbol (residue, magnitude)
 
 Usual pipe symbol, press `S-\\` to enter it.
@@ -551,7 +548,6 @@ the `CpxFloor` function. See [Complex Floor](#-18) function.
 Since this operation involves division, ⎕CT and ⎕DCT are implicit arguments of _Residue_.
 
 ## ⌈
-
 ### Upstile (maximum, ceiling)
 
 Press `C-s` to generate the symbol.
@@ -596,7 +592,6 @@ _Result_ is the maximum of the two sets of _lval_ and _rval_.
 This function is undefined for complex numbers.
 
 ## ⌊
-
 ### Downstile (minimum, floor)
 
 Press `C-d` to generate the symbol.
