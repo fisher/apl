@@ -776,7 +776,6 @@ Optionally separates a single APL statement into 2 expressions. When a statement
 ```
 
 ## →
-
 ### Abort, Branch
 
 #### Nilladic
@@ -831,8 +830,8 @@ _No use_
 ## ⌽
 ## ⊖
 ## ⍉
-## ∘
 
+## ∘
 ### Jot
 
 Not to be confused with `○` symbol ([○](#-15), _circular_, or _π-times_). This particular one is smaller.
@@ -844,7 +843,6 @@ Press `C-j` to generate the symbol.
 TODO: very wide topic here
 
 ## ⍬
-
 ### Zilde
 
 Press `C-S-=` to generate the symbol
@@ -879,7 +877,6 @@ Syntactic sugar for the empty vector (`⍳0`). Seen as a numeric constant.
 ```
 
 ## .
-
 ### Period (or dot, or point)
 
 Regular full period sign, `.`, it has a special meaning in the APL syntax.
@@ -931,8 +928,8 @@ SYNTAX ERROR: Invalid token
 ```
 
 ## ⍎
-## ⍕
 
+## ⍕
 ### Thorn symbol, AKA Format
 
 Press `C-S-'` to generate the symbol
@@ -951,7 +948,6 @@ Dyadic format.
 
 
 ## ⍺
-
 ### Alpha
 
 Press `C-a` to generate the symbol.
@@ -1005,7 +1001,6 @@ SYNTAX ERROR
 ```
 
 ## ⍵
-
 ### Omega
 
 Press `C-w` to generate the symbol.
