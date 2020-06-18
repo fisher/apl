@@ -48,7 +48,6 @@ foo/bar ⍝ ... blablabla
 ```
 
 ## ←
-
 ### Assingment
 
 #### Monadic
