@@ -1,4 +1,4 @@
-*Nota Bene*: work in progress (as of 2020.06.17)
+*Nota Bene*: work in progress (as of 2020.06.18)
 
 The charset
 ===========
@@ -144,7 +144,6 @@ var ← 2j3 - .3j5 ⍝ ... var is 1.7J¯2; (a+bi)-(c+di) = (a-c)+(b-d)i
 ```
 
 ## ×
-
 ### Multiplication
 
 Press `C-=` to generate the symbol.
@@ -180,7 +179,6 @@ res ← 2 3 4 × 10 20 ⍝ ... throws LENGTH ERROR: Mismatched left and right ar
 ```
 
 ## ÷
-
 ### Division
 
 Press `C-[` to generate the symbol.
@@ -415,7 +413,6 @@ _Key_ operator in the form _lval_ _f_ ⌸ _rval_, where _lval_ is an optional ar
 TODO: elaborate
 
 ## !
-
 ### Exlamation mark (factorial, binomial)
 
 #### Monadic
@@ -447,7 +444,6 @@ Binomial coefficient. Number of combinations of _rval_ items taken _lval_ at a t
 ```
 
 ## ?
-
 ### Question mark (Roll, Deal)
 
 #### Monadic
