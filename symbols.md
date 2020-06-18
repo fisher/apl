@@ -669,7 +669,6 @@ DOMAIN ERROR
 ```
 
 ## ⊥
-
 ### Decode
 
 #### Monadic
@@ -677,7 +676,6 @@ DOMAIN ERROR
 #### Dyadic
 
 ## ⊤
-
 ### Encode
 
 #### Monadic
@@ -685,7 +683,6 @@ DOMAIN ERROR
 #### Dyadic
 
 ## ⊣
-
 ### Same, left
 
 #### Monadic
@@ -693,7 +690,6 @@ DOMAIN ERROR
 #### Dyadic
 
 ## ⊢
-
 ### Same, right
 
 #### Monadic
@@ -701,7 +697,6 @@ DOMAIN ERROR
 #### Dyadic
 
 ## ≡
-
 ### Depth, match
 
 #### Monadic
@@ -721,8 +716,10 @@ the proper look should be `depth` symbol that is crossed out by a slash, from to
 
 ## ↑
 ### Disclose, mix, take
+
 ## ↓
 ### Drop, split
+
 ## ⊂
 ### Left shoe
 
