@@ -1030,7 +1030,7 @@ Press `C-2` to enter the symbol
 
 #### Monadic
 
-Used to denote a negative number. Not the same as regular `-` (minus) sign.
+Used to denote a negative number. Not the same as regular `-` (minus) sign. The difference is smooth, just think about monadic '-' sign as of a function, which negates the argument, while _high_ _negative_ _sign_ appyes to immediate literal, i.e. it cannot be appied to a variable.
 
 ```apl
       ¯1 2 3
