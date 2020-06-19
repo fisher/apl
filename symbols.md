@@ -120,7 +120,7 @@ Regular minus sign.
 
 #### Monadic
 
-Negates the number.
+An unary function. Negates the number.
 
 The argument can be any numeric array. _Result_ is numeric and is the negative value of the argument. For complex
 numbers both the real and imaginary parts are negated.
