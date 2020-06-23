@@ -761,7 +761,7 @@ Press `C-r` to generate it.
 
 #### Monadic
 
-Shape function. Gives you the shape of an object.
+Shape function. Gives you the shape of an object. Result is always a vector, even if the object is a scalar (not a vector of length 1), the result of the _shape_ function will be an empty vector.
 
 #### Dyadic
 
