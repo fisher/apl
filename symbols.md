@@ -757,8 +757,15 @@ Partition.
 ## ⍴
 ### Rho (greek letter)
 
+Press `C-r` to generate it.
+
 #### Monadic
+
+Shape function. Gives you the shape of an object.
+
 #### Dyadic
+
+Reshape function. Rearranges the object from the _rval_ to the shape specified by _lval_.
 
 ## ⋄
 
