@@ -755,6 +755,11 @@ Partition.
 ## ∪
 ## ∩
 ## ⍴
+### Rho (greek letter)
+
+#### Monadic
+#### Dyadic
+
 ## ⋄
 
 ### Diamond
