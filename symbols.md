@@ -1,4 +1,4 @@
-*Nota Bene*: work in progress (as of 2020.06.23)
+*Nota Bene*: work in progress (as of 2020.09.10)
 
 The charset
 ===========
