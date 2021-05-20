@@ -1,7 +1,8 @@
 # Playing around APL
 
-**Nota Bene**: this is work in progress
+(this was mostly Dyalog APL oriented)
 
+**Nota Bene**: this is work in progress
 
 # The charset
 
