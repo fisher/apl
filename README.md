@@ -1,3 +1,5 @@
+Update: unfortunately, I have completely lost interest in it.
+
 # Playing around APL
 
 (this was mostly Dyalog APL oriented)
